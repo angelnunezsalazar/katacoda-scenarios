@@ -1,6 +1,6 @@
 {
-  "title": "My First Scenario",
-  "description": "Learning how to educate via Katacoda",
+  "title": "GitCode",
+  "description": "GitCode",
   "details": {
     "steps": [
       { "title": "Step 1", "text": "step1.md" }
