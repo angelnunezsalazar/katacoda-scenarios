@@ -1,10 +1,10 @@
 {
-    "title": "Git Code",
-    "description": "Git Code",
+    "title": "Test Automation",
+    "description": "Test Automation",
     "details": {
         "steps": [
             {
-                "title": "Step 1",
+                "title": "Step 1 - Unit testing",
                 "text": "step1.md"
             }
         ],
