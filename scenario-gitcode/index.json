@@ -1,9 +1,12 @@
 {
     "icon": "fa-node",
-    "title": "Scenario with Editor UI",
-    "description": "Katacoda Scenario Example",
-    "authenticated": false,
+    "title": "GitCode",
+    "description": "GitCode",
     "details": {
+        "intro": {
+            "text": "intro.md",
+            "courseData": "env-init.sh"
+        },
         "steps": [
             {
                 "title": "Hello World",
