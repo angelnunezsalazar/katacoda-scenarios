@@ -11,8 +11,7 @@
     }
   },
   "environment": {
-        "uilayout": "editor-terminal",
-        "uisettings": "javascript"
+        "uilayout": "terminal"
   },
   "backend": {
         "image": "docker"
