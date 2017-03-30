@@ -11,9 +11,12 @@
     }
   },
   "environment": {
-    "uilayout": "terminal"
+        "hideintro": true,
+        "hidefinish": true,
+        "uilayout": "editor-terminal",
+        "uisettings": "javascript"
   },
   "backend": {
-    "imageid": "docker"
+        "image": "node"
   }
 }
