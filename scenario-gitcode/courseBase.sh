@@ -1,2 +1,3 @@
 git clone https://github.com/snahider/katacoda-nodejs.git .
-npm install -g
+npm install
+sleep 10s
