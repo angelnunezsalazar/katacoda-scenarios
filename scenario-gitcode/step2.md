@@ -1,4 +1,6 @@
-Copia el siguiente código en el editor.
+Comienza ejecutando todas las pruebas unitarias `make e2e-tests`{{execute}}
+
+Abre la clase `./test/e2e-test/chrome-test.js` y agrega una nueva prueba unitaria.
 
 <pre class="file" data-filename="./test/e2e-test/chrome-test.js" data-target="replace">
 var expect   = require("chai").expect;
@@ -10,4 +12,4 @@ describe("Chrome", function(){
 });
 </pre>
 
-Ejecuta las pruebas desde el terminal utilizando el siguiente comando `make e2e-tests`{{execute}}
+Ejecuta nuevamente todas las pruebas `make e2e-tests`{{execute}}
