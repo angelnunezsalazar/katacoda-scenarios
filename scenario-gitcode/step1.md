@@ -1,19 +1,15 @@
-The following snippet can be copied into the editor:
+Copia el siguiente código en el editor.
 
-<pre class="file" data-filename="app.js" data-target="replace">var http = require('http');
-var requestListener = function (req, res) {
-  res.writeHead(200);
-  res.end('Hello, World!');
-}
-
-var server = http.createServer(requestListener);
-server.listen(3000, function() { console.log("Listening on port 3000")});
+<pre class="file" data-filename="./test/unit-test/calculator-test.js" data-target="replace">
+var expect   = require("chai").expect;
+describe("Calculator", function(){
+    it("adds two numbers", function () {
+        expect(1+2).equal(3);
+    }); 
+    it("subtract two numbers", function () {
+        expect(3-1).equal(2);
+    }); 
+});
 </pre>
 
-Code can be executed with the syntax `node app.js`{{execute}}
-
-The following will automatically be turned into a link and proxied to port 3000 -  http://[[CLIENT_SUBDOMAIN]]-3000-[[KATACODA_HOST]].environments.katacoda.com/
-
-In a multi-host environment, such as Docker, use HOST_SUBDOMAIN instead of CLIENT_SUBDOMAIN.
-
-Live example at https://www.katacoda.com/courses/nodejs/playground
+Ejecuta las pruebas desde el terminal utilizando el siguiente comando `make unit-tests`{{execute}}

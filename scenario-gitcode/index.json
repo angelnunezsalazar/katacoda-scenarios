@@ -6,6 +6,10 @@
             {
                 "title": "Step 1 - Unit testing",
                 "text": "step1.md"
+            },
+            {
+                "title": "Step 2 - E2E testing",
+                "text": "step2.md"
             }
         ],
         "intro": {
