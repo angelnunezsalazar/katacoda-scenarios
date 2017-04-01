@@ -4,11 +4,11 @@
     "details": {
         "steps": [
             {
-                "title": "Step 1 - Unit testing",
+                "title": "Step 1 - Unit Testing",
                 "text": "step1.md"
             },
             {
-                "title": "Step 2 - E2E testing",
+                "title": "Step 2 - End to End Testing",
                 "text": "step2.md"
             }
         ],
@@ -22,7 +22,7 @@
     },
     "environment": {
         "uilayout": "terminal-editor",
-        "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m"
+        "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n"
     },
     "backend": {
         "imageid": "docker"

@@ -1,13 +1,17 @@
-Comienza ejecutando todas las pruebas unitarias `make e2e-tests`{{execute}}
+Comienza ejecutando todas las pruebas end to end `make e2e-tests`{{execute}}
 
-Abre la clase `./test/e2e-test/chrome-test.js` y agrega una nueva prueba unitaria.
+Abre la clase `./test/e2e-test/amazon-test.js` y agrega una nueva prueba unitaria.
 
-<pre class="file" data-filename="./test/e2e-test/chrome-test.js" data-target="replace">
+<pre class="file" data-filename="./test/e2e-test/amazon-test.js" data-target="replace">
 var expect   = require("chai").expect;
-describe("Chrome", function(){
-    it("gets the title of Chrome top page", function () {
-        const title = browser.url('https://www.google.com/chrome/').getTitle()
-        expect(title).equal('Chrome Web Browser');
+describe("Amazon", function(){
+    it("allows to search books", function () {
+        browser.url('https://www.amazon.com/')
+        browser.setValue('#twotabsearchtextbox', 'Experiences of Test Automation')
+        browser.click('input.nav-input[type=submit]')
+        
+        source=browser.getSource();
+        expect(source).to.contain('Experiences of Test Automation: Case Studies of Software Test Automation');
     });
 });
 </pre>
