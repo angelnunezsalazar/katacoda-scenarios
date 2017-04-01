@@ -10,8 +10,8 @@ describe("Amazon", function(){
         browser.setValue('#twotabsearchtextbox', 'Experiences of Test Automation')
         browser.click('input.nav-input[type=submit]')
         
-        source=browser.getSource();
-        expect(source).to.contain('Experiences of Test Automation: Case Studies of Software Test Automation');
+        html=browser.getHTML('#atfResults');
+        expect(html).to.contain('Experiences of Test Automation: Case Studies of Software Test Automation');
     });
 });
 </pre>
