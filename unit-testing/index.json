@@ -14,11 +14,7 @@
             {
                 "title": "Step 3 - Implementa una nueva prueba unitaria",
                 "text": "step3.md"
-            },
-            {
-                "title": "Step 4 - Implementa otra nueva prueba unitaria",
-                "text": "step3.md"
-            }            
+            }           
         ],
         "intro": {
             "text": "intro.md",
