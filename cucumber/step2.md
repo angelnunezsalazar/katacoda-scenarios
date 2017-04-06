@@ -1,6 +1,6 @@
 Realiza los siguientes pasos:
 
-1. Agrega el siguiente escenario.
+1) Agrega el siguiente escenario.
 
 <pre class="file" data-filename="./features/reloj.feature" data-target="append">
   Scenario: Alarma no suena si está apagada
@@ -10,13 +10,13 @@ Realiza los siguientes pasos:
     Then no esta sonando
 </pre>
 
-2. Ejecuta las pruebas `make cucumber`{{execute}}.
+2) Ejecuta las pruebas `make cucumber`{{execute}}.
 
-3. Lee los resultados, observa que indica que un `step` no está implementado.
+3)  Lee los resultados, observa que indica que un `step` no está implementado.
 
-4. Abre el archivo  `./features/step_definitions/steps.rb` para implementar el step faltante.
+4) Abre el archivo  `./features/step_definitions/steps.rb` para implementar el step faltante.
 
-5. Agrega el siguiente contenido en el archivo de steps.
+5) Agrega el siguiente contenido en el archivo de steps.
 
 <pre class="file" data-filename="./features/step_definitions/steps.rb" data-target="append">
 Given(/^se encuentra apagada$/) do

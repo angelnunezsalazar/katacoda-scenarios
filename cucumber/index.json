@@ -21,7 +21,7 @@
         }
     },
     "files": [
-        "./features/reloj.feature"
+        "./features/alarma.feature"
     ],
     "environment": {
         "uilayout": "terminal-editor",
