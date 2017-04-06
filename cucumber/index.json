@@ -1,0 +1,33 @@
+{
+    "title": "Cucumber",
+    "description": "Cucumber",
+    "details": {
+        "steps": [
+            {
+                "title": "Step 1 - Pruebas con Cucumber",
+                "text": "step1.md"
+            },
+            {
+                "title": "Step 2 - Implementa una nueva prueba con Cucumber",
+                "text": "step2.md"
+            }          
+        ],
+        "intro": {
+            "text": "intro.md",
+            "courseData": "courseBase.sh"
+        },
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "files": [
+        "./features/reloj.feature"
+    ],
+    "environment": {
+        "uilayout": "terminal-editor",
+        "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n"
+    },
+    "backend": {
+        "imageid": "docker"
+    }
+}
