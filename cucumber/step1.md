@@ -2,8 +2,6 @@ Realiza los siguientes pasos:
 
 1) Abre la clase `./features/alarma.feature`.
 
-    Every .feature file conventionally consists of a single feature. A line starting with the keyword Feature followed by free indented text starts a feature.
-
     Cada archivo .feature por convención corresponde a una única funcionalidad.
     Una funcionalidad  comienza con la palabra clave Feature seguida por texto identado.
 
