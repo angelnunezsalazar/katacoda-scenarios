@@ -4,11 +4,14 @@ Realiza los siguientes pasos:
 
     Every .feature file conventionally consists of a single feature. A line starting with the keyword Feature followed by free indented text starts a feature.
 
+    Cada archivo .feature por convención corresponde a una única funcionalidad.
+    Una funcionalidad  comienza con la palabra clave Feature seguida por texto identado.
+
 2) Identifica los 2 escenarios de pruebas.
 
-    A feature contains a list of scenarios. Every scenario starts with the word Scenario (or localized equivalent; Cucumber is localized for dozens of languages).
+    Una funcionalidad contiene una lista de escenarios, cada escenario comienza con la palabra Scenario (o su versión en el lenguaje elegido, Cucumber soporta muchos lenguajes).
     
-    Every scenario consists of a list of steps, which must start with one of the keywords Given, When, Then, But or And. Cucumber treats them all the same, but you shouldn't.
+    Cada escenario consiste en una lista de pasos (steps), que deben empezar con las palabras Given, When, Then, But o And (o su versión en otros lenguajes). Cucumber no hace diferencias entre esas palabras, pero tu deberías usarlas correctamente para que que quede claro el objetivo del escenario.
 
 3) Desde el terminal ejecuta todas las pruebas `make cucumber`{{execute}}.
 
