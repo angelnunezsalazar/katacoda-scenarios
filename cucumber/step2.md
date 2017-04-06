@@ -12,9 +12,9 @@ Realiza los siguientes pasos:
 
 2) Ejecuta las pruebas `make cucumber`{{execute}}.
 
-3)  Lee los resultados, observa que indica que un `step` no está implementado.
+3) Lee los resultados, observa que indica que un `step` no está implementado.
 
-4) Abre el archivo  `./features/step_definitions/steps.rb` para implementar el step faltante.
+4) Abre el archivo `./features/step_definitions/steps.rb` para implementar el step faltante.
 
 5) Agrega el siguiente contenido en el archivo de steps.
 
@@ -24,4 +24,4 @@ Given(/^se encuentra apagada$/) do
 end
 </pre>
 
-6. Ejecuta las pruebas `make cucumber`{{execute}}.
+6) Ejecuta las pruebas `make cucumber`{{execute}}.
