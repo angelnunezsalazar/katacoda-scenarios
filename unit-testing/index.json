@@ -1,6 +1,7 @@
 {
     "title": "Unit Testing",
     "description": "Unit Testing",
+    "authenticated": false,
     "details": {
         "steps": [
             {
