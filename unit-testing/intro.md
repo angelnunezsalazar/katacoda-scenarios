@@ -1,1 +1,1 @@
-En esta actividad practicarás la creación y ejecución de pruebas utilizando Cucumber.
+En esta actividad practicarás la creación y ejecución de Pruebas Unitarias utilizando rspec (herramienta para automatizar pruebas en Ruby).
