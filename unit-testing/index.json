@@ -26,7 +26,7 @@
     },
     "environment": {
         "uilayout": "editor-terminal",
-        "uisettings": "ruby",
+        "uisettings": "java",
         "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n"
     },
     "backend": {
