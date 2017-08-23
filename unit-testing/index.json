@@ -24,9 +24,11 @@
             "text": "finish.md"
         }
     },
+    "files": [
+        "reloj.rb", "spec/reloj_spec.rb"
+    ],
     "environment": {
         "uilayout": "editor-terminal",
-        "uisettings": "java",
         "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n"
     },
     "backend": {
