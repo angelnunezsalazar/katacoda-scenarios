@@ -1,20 +1,23 @@
 Realiza los siguientes pasos:
 
-1) Descarga Jenkins `docker pull jenkins:latest`{{execute}}.
+1) Descarga Jenkins `docker pull jenkins:latest`{{execute}}
 
 2) Levanta Jenkins.
 
 `docker run -d -u root --name jenkins \
     -p 8080:8080 -p 50000:50000 \
     -v /root/jenkins:/var/jenkins_home \
+    -v /var/run/docker.sock:/var/run/docker.sock
     jenkins:latest`{{execute}}.
 
 3) Abre Jenkins en una pestaña de la consola.
 
-4) Investiga el Password de Jenkins `docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword`{{execute}}.
+4) Investiga el Password de Jenkins.
 
-5) No instales Ningún Plugin.
+`docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword`{{execute}}
 
-6) Crea el usuario administrador.
+5) Plugins: Instala únicamente el plugin de `Git Plugin`.
 
-7) Listo
+6) Admin: Crea un usuario administrador con los datos que gustes.
+
+7) Listo!!!
