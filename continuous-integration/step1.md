@@ -11,4 +11,10 @@ Realiza los siguientes pasos:
 
 3) Abre Jenkins en una pestaña de la consola.
 
-4) Juega con Jenkins.
+4) Investiga el Password de Jenkins `docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword`{{execute}}.
+
+5) No instales Ningún Plugin.
+
+6) Crea el usuario administrador.
+
+7) Listo
