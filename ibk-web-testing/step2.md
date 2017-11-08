@@ -4,7 +4,8 @@ Realiza los siguientes pasos:
 
 2. Observarás que hay una prueba que automatiza acciones en el navegador. Revisa brevemente la prueba y entiende su lógica.
 
-3. Antes de ejecutar la prueba, se necesitan completar 2 datos (`¿hora alarma?`, `¿minutos alarma?`). Completa estos datos en la prueba manteniendo las comillas simples. Recomendación: Mira la hora de tu computador y establece la alarma `3 minutos` hacia adelante.
+3. Antes de ejecutar la prueba, se necesitan completar 2 datos (`[hora de la alarma]`, `[minutos de la alarma]`). Completa estos datos en la prueba manteniendo las comillas simples. Ejm `[hora de la alarma]` = `5` y `25`
+Recomendación: Mira la hora de tu computador y establece la alarma `3 minutos` hacia adelante.
 
 4. Desde el terminal, ejecuta la prueba web automatizada `make web-tests`{{execute}}.
 
