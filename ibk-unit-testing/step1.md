@@ -1,0 +1,1 @@
+Abre el archivo `reloj.rb` y revisa brevemente su contenido (menos de 1 minuto). ¿qué responsabilidad tiene esta clase?.
