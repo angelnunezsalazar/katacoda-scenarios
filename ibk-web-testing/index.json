@@ -11,7 +11,11 @@
             {
                 "title": "Step 2 - Pruebas web automatizadas",
                 "text": "step2.md"
-            }         
+            },
+            {
+                "title": "Step 3 - Conclusiones",
+                "text": "step3.md"
+            }  
         ],
         "intro": {
             "text": "intro.md",

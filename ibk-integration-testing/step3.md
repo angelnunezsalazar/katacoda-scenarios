@@ -1,3 +1,5 @@
-En un Postit escribe la respuesta a la siguiente pregunta:
+En postits escribe la respuesta a la siguientes preguntas:
 
-¿Cuántas y qué pruebas más crees que se necesiten automatizar, para probar completamente el funcionamiento del servicio?
+- ¿Qué casos de pruebas más crees que se necesiten automatizar para probar por completo el funcionamiento del servicio?
+
+- ¿Cuáles son los beneficios de este tipo de pruebas?
