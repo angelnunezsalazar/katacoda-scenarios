@@ -1,6 +1,6 @@
 Realiza los siguientes pasos:
 
-1. Abre la clase `./spec/reloj_spec.rb`.
+1. Abre el archivo `./tests/unit_tests.rb`.
 
 2. Identifica las 2 pruebas unitarias existentes y explora brevemente su contenido.
 

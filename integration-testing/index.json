@@ -1,21 +1,21 @@
 {
-    "title": "IBK Web Testing",
-    "description": "IBK Web Testing",
+    "title": "Integration Testing",
+    "description": "Integration Testing",
     "authenticated": false,
     "details": {
         "steps": [
             {
-                "title": "Step 1 - La pantalla del Reloj Despertador",
+                "title": "Step 1 - El API del Reloj Despertador",
                 "text": "step1.md"
             },
             {
-                "title": "Step 2 - Pruebas web automatizadas",
+                "title": "Step 2 - Pruebas automatizadas del API",
                 "text": "step2.md"
             },
             {
                 "title": "Step 3 - Conclusiones",
                 "text": "step3.md"
-            }  
+            }           
         ],
         "intro": {
             "text": "intro.md",

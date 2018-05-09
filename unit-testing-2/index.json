@@ -1,6 +1,6 @@
 {
-    "title": "IBK Unit Testing",
-    "description": "IBK Unit Testing",
+    "title": "Unit Testing 2",
+    "description": "Unit Testing",
     "authenticated": false,
     "details": {
         "steps": [
@@ -15,11 +15,7 @@
             {
                 "title": "Step 3 - Implementa una nueva prueba unitaria",
                 "text": "step3.md"
-            },
-            {
-                "title": "Step 4 - Conclusiones",
-                "text": "step4.md"
-            }             
+            }           
         ],
         "intro": {
             "text": "intro.md",

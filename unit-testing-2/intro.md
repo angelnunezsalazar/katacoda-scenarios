@@ -1,0 +1,1 @@
+En esta actividad practicarás la creación y ejecución de Pruebas Unitarias utilizando RSpec (herramienta para automatizar pruebas en Ruby).

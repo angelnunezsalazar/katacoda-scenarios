@@ -1,5 +1,5 @@
-Realiza los siguientes pasos:
+En postits escribe la respuesta a la siguientes preguntas:
 
-1. Piensa que nueva prueba unitaria e impleméntala.
+- ¿Qué casos de pruebas más crees que se necesiten automatizar para probar por completo la clase `reloj`?
 
-2. Luego de implementar la prueba, desde el terminal ejecuta todas las pruebas unitarias `make unit-tests`{{execute}}
+- ¿Cuáles crees que son los beneficios de este tipo de pruebas?

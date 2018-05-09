@@ -1,1 +1,1 @@
-Abre la clase `reloj.rb` y revisa brevement su contenido (qué metodos tiene, qué hace cada método).
+Abre el archivo `reloj.rb` y revisa brevemente su contenido (menos de 1 minuto). ¿qué responsabilidad tiene esta clase?.
