@@ -8,16 +8,16 @@
   "details": {
     "steps": [
       {
-        "title": "Preparation",
+        "title": "Preparación",
         "text": "step1.md",
         "verify": "step1-verify.sh"
       },
       {
-        "title": "Jenkins dashboard",
+        "title": "Ingresa a Jenkins",
         "text": "step2.md"
       },
       {
-        "title": "Work on a user story",
+        "title": "Trabaja en una nueva Historia de Usuario",
         "text": "step3-nospell.md"
       },
       {

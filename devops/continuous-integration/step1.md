@@ -1,18 +1,13 @@
-Run the following command to bring up Jenkins and connect it to your copy of the
-Pet Clinic application's code. This script may take a few minutes to run.
+Ejecuta el siguiente comando para levantar **Jenkins** y conectarlo a tu repositorio de GitHub **Pet Clinic**. El script puede tomar algunos minutos en ejecutarse.
 
-(you will re-use the GitHub "Personal Access Token" you have created in the
-Welcome module. If you lost it, go to
-[https://github.com/settings/tokens](https://github.com/settings/tokens) to
-create a new one and save it for later.)
+*(Reutilizarás el GitHub 'Personal Access Token' que creaste en el módulo de Bienvenida) Si lo perdiste, ingresa a 
+[https://github.com/settings/tokens](https://github.com/settings/tokens) para crear un nuevo token, grábalo usarlo después.)*
 
   `./prepare.sh`{{execute}}
 
-...and wait for the "Click on 'CONTINUE'" message.
+... y espera el mensaje "Click on 'CONTINUE'"
 
-✏ Note: **Jenkins** is an open source automation server used for automating
-continuous integration and facilitating the technical aspects of continuous
-delivery.
+✏ Nota: **Jenkins** es una herramienta open source utilizada para facilitar la práctica de Continuous Integration y la creación de Delivery Pipelines.
 
 💡 **TIP**: 🦊 Firefox user? Use <kbd>CTRL</kbd>+<kbd>INS</kbd> /
 <kbd>SHIFT</kbd>+<kbd>INS</kbd> to copy/paste your Personal Access Token in the
