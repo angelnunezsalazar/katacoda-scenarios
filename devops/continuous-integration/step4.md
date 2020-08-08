@@ -1,14 +1,15 @@
-## Tasks
+Guardaremos los cambios en una nueva rama y crearemos un pull request para integrar los cambios de esta rama en la rama principal.
 
-* Under "**Commit changes**", enter a short description for the change. A good
-  practices is to have the ID of the user story associated with this task in the
-  short description like so: `Fix #1: add horse names in database`{{copy}} - for
-  user story #1.
-* Choose "Create a **new branch** for this commit [...]" option and give the
-  branch a meaningful short name such as `us-1-horse-db`{{copy}}. Note that the
-  user story ID is used again in the branch name: this is to foster traceability
-  and help maintain a clean history of commits to the repository.
-* Click "**Propose File Change**": this will trigger the creation of a pull
-  request.
-* Scroll down and review the changes. You see a before and after comparison.
-* When you are happy with your changes click "**Create Pull Request**".
+## Guardar Cambios en una Nueva Rama
+
+* En la caja "**Commit changes**" ingresa una descripción corta del cambio. Una buena práctica es tener el ID de la historia en esta descripción, por ejemplo `Fix #1: add horse names in database`{{copy}}, para la historia #1.
+
+* Elige la opción "Create a **new branch** for this commit [...]" e ingresa un nombre corto para la rama como `us-1-horse-db`{{copy}}. Nota que el ID de la historia es usada nuevamente en la rama, esto para fomentar la trazabilidad y un mejor historia de cambios en el repositorio.
+
+## Crear un Pull Request
+
+* Click en "**Propose File Change**" para iniciar la creación del Pull Request
+
+* Desplázate hasta abajo y revisa los cambios, verás una comparación de antes y después.
+
+* Si estás conforme con los cambios haz click en "**Create Pull Request**".

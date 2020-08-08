@@ -1,11 +1,10 @@
-# Conclusion
+# Conclusión
 
-You experienced a complete "Continuous Integration" flow:
+Acabas de experimentar un flujo de Continuous Integration:
 
-* Proposing changes within a short lived feature branch.
-* Submit a pull request.
-* Trigger the Continuous Integration pipeline.
-* Got the results from automated tests and checks.
-* Looked for feedback with a peer review.
-* Iterate on the change.
-* Finally, merge the change in the `master` branch.
+* Realizar cambios en una rama de corta duración (feature branch).
+* Realizar un pull request.
+* Ejecutar automáticamente el pipeline de Continuous Integration.
+* Obtener los resultados de las verificaciones en el pipeline.
+* Buscar retroalimentación mediante una revisión de pares.
+* Finalmente, realizar un merge del cambio en la rama principal.

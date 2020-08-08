@@ -1,13 +1,15 @@
-At this point, because you have fixed the only open issue all the automated checks will have passed.
+Ahora que todas las verificaciones automáticas han pasado. Es momento de involucrar a Tina la tester  a que realice una revisión de pares.
 
-It is now time to involve someone else for a peer review.
+![](../assets/team/tina.png)
 
-## Tasks
+✏ Note: Tina es la aplicación de bot que agregaste al inicio.
 
-![](../../assets/online-devops-dojo/continuous-integration/tina.png)
+* En el pull request, agrega un comentario para preguntar a Tina que revise el pull request: `/tina - can you have a look at this?`{{copy}}
 
-* In the pull request, add a comment to ask Tina the tester to review the pull request: `/tina - can you have a look at this?`{{copy}}
-* After checking the changes in the "Files changed" tab, Tina will have comments, and wants you to replace "Jolly Jumper" by "Silver Blaze", around line 51.
-* Go ahead and implement the change by clicking the pen icon in the "Files changed" tab next to `data.sql` file, in the context of the existing - still opened - pull request.
-* Jenkins will again build and test the entire application with this latest change, making sure everything builds and tests are passing. Check it at: <a href="https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/blue/organizations/jenkins/pet-clinic/pr" target="jenkins">https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/blue/organizations/jenkins/pet-clinic/pr</a>
-* If everything is OK, the tests will pass. The pull request displays the checks done by Jenkins: everything is green!
+* Tina luego de revisar los cambios, te pedirá que cambies 
+
+* Implementa los cambios ingresando al tab "**Files changed**", haciendo click en el ícono de lapiz al lado del archivo `data.sql`. Guarda los cambios sobre la misma rama.
+
+* Jenkins ejecutará nuevamente el pipeline con el último cambio para asegurarse que todas las verificaciones están pasando. Opcionalmente puedes ver la ejecución en Jenkins <a href="https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/blue/organizations/jenkins/pet-clinic/pr" target="jenkins">https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/blue/organizations/jenkins/pet-clinic/pr</a>
+* 
+* Cuando el pipeline haya finalizado OK, en el pull request aparecerá el mensaje **everything is green!**.

@@ -1,35 +1,26 @@
-## Continuous Integration runs
+## Ejecución del Job en Jenkins
 
-Go to Jenkins to see Continuous Integration happening: <a href="https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/blue/organizations/jenkins/pet-clinic/activity/" target="jenkins">https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/blue/organizations/jenkins/pet-clinic/activity/</a>
+Ingresa a Jenkins para ver qué está sucediendo <a href="https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/blue/organizations/jenkins/pet-clinic/activity/" target="jenkins">https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/blue/organizations/jenkins/pet-clinic/activity/</a>
 
-![CI Pipeline in Jenkins](../../assets/online-devops-dojo/continuous-integration/ci-blue-ocean.png)
+![CI Pipeline in Jenkins](../assets/ci/ci-blue-ocean.png)
 
-This will take some time to:
+Observarás que se inició la ejecución de un nuevo pipeline, las etapas ('stages') que tiene este pipeline son las siguientes:
+- Descargar las dependencias de la aplicación.
+- Compilar la aplicación.
+- Ejecutar Pruebas Unitarias.
 
-* Download the dependencies of the Pet Clinic application.
-* Build the application to generate a package.
-* Run unit tests.
-* Deploy the result to an ephemeral Docker container.
+## ¿Cuál es la mecánica de funcionamiento?
 
-## The mechanics
+* Cuando el Pull Request es creado, GitHub notifica a Jenkins a través de un Web Hook.
+  
+  ✏ Note: Los **Web Hook** se usan para notificar a otras aplicaciones de eventos en Github, como por ejemplo la creación de un Pull Request. Opcionalmente puedes revisar la configuración del web hook en [https://github.com/[your_username]/pet-clinic/settings/hooks](https://[[HOST_SUBDOMAIN]]-9876-[[KATACODA_HOST]].environments.katacoda.com/#hooks).
 
-As the pull request is created, a series of automated actions happen in the
-background:
+* Cuando Jenkins es notificado, lee el contenido del archivo **Jenkinsfile** en la raiz del repositorio de código. Este archivo tiene la implementación de todas las etapas del pipeline de Integración Continua.
+  
+* Cada etapa del pipeline obtenida del Jenkinsfile es ejecutada en el servidor de Jenkins.
 
-* GitHub notifies Jenkins of the code change thanks to the
-  [web hook](https://help.github.com/articles/about-webhooks/), which you can
-  see in your repository settings at
-  [https://github.com/[your_username]/pet-clinic/settings/hooks](https://[[HOST_SUBDOMAIN]]-9876-[[KATACODA_HOST]].environments.katacoda.com/#hooks).
-  A web hook is used to notify other applications about events in the GitHub
-  repository, such as a Pull Request being submitted.
-* Jenkins reads the content of the
-  [`Jenkinsfile`](https://jenkins.io/doc/book/pipeline/jenkinsfile/) at the root
-  of your repository. The Jenkinsfile is the file which has the implementation
-  of your applications' continuous integration pipeline.
-* The stages and steps in the Jenkinsfile are executed on the Jenkins server.
+## Revisa el resultado del Pipeline
 
-## Tasks
+* Revisa el resultado del pipeline, observa que la etapa **build** ha encontrado un error.
 
-* Review the result of the pipeline: note the "build" step has caught the error
-  we introduced in a previous step.
-* Click on the step which is in error and review the logs of the error.
+* Click en la etapa que tiene el error y revisa brevemente los logs de error, encontrarás que algunas pruebas han fallado.
