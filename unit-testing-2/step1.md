@@ -1,1 +1,0 @@
-Abre la clase `reloj.rb` y revisa brevement su contenido (qué metodos tiene, qué hace cada método).
