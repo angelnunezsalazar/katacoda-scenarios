@@ -1,19 +1,19 @@
+## Implementa la nueva Historia
+
 Tu eres Dan el desarrollador
 
-![](./assets/img/dan.png)
+![](./assets/dan.png)
 
 y estás trabajando en la historia que ha sido priorizada por Paulo, el Product Owner.
 
-![](./assets/img/paulo.png)
+![](./assets/paulo.png)
 
-![](./assets/img/user-story.png)
+![](./assets/user-story.png)
 
-Lee la historia que se encuentra registrada con un GitHub Issue en tu repositorio:
+Lee la historia que se encuentra registrada como un **GitHub Issue** en tu repositorio:
 [https://github.com/[your_username]/pet-clinic/issues](https://[[HOST_SUBDOMAIN]]-9876-[[KATACODA_HOST]].environments.katacoda.com/#user-story)
 
-# Implementa la nueva Historia
-
-✏ Nota: Para facilitar la parte práctica, modificarás el código fuente directamente desde navegador, a través de la interfaz gráfica de Github.
+✏ **Nota**: Para facilitar la parte práctica, modificarás el código fuente directamente desde navegador, a través de la interfaz gráfica de Github.
 
 ## Agrega una nueva categoría de mascotas en la BD 
 
@@ -30,4 +30,4 @@ Lee la historia que se encuentra registrada con un GitHub Issue en tu repositori
 
 * No realices commit de los cambios aún.
 
-✏ Nota: Hay un error intencional en la línea de "Jolly Jumper", para que puedas ver las verificaciones automaticas que se ejecutarán como parte de Continus Integration.
+✏ **Nota**: Hay un error intencional en la línea de "Jolly Jumper", para que puedas ver las verificaciones automaticas que se ejecutarán como parte de Continus Integration.
