@@ -1,10 +1,13 @@
+
 ## Ejecución del Job en Jenkins
 
 Ingresa a Jenkins para ver qué está sucediendo <a href="https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/blue/organizations/jenkins/pet-clinic/activity/" target="jenkins">https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/blue/organizations/jenkins/pet-clinic/activity/</a>
 
+Observarás que se inició la ejecución de un nuevo pipeline.
+
 ![CI Pipeline in Jenkins](./assets/ci-blue-ocean.png)
 
-Observarás que se inició la ejecución de un nuevo pipeline, las etapas ('stages') que tiene este pipeline son las siguientes:
+Las etapas ('stages') que tiene este pipeline son las siguientes:
 - Descargar las dependencias de la aplicación.
 - Compilar la aplicación.
 - Ejecutar Pruebas Unitarias.
