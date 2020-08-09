@@ -1,6 +1,6 @@
 # Conclusión
 
-Acabas de experimentar un flujo de Continuous Integration:
+Acabas de experimentar un flujo de trabajo de Continuous Integration:
 
 * Realizar cambios en una rama de corta duración (feature branch).
 * Realizar un pull request.

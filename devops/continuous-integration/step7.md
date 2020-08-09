@@ -1,6 +1,6 @@
 Ahora que todas las verificaciones automáticas han pasado. Es momento de involucrar a Tina la tester  a que realice una revisión de pares.
 
-![](../assets/team/tina.png)
+![](./assets/img/tina.png)
 
 ✏ Note: Tina es la aplicación de bot que agregaste al inicio.
 

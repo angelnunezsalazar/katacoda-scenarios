@@ -1,17 +1,17 @@
 Tu eres Dan el desarrollador
 
-![](../assets/team/dan.png)
+![](./assets/img/dan.png)
 
 y estás trabajando en la historia que ha sido priorizada por Paulo, el Product Owner.
 
-![](../assets/team/paulo.png)
+![](./assets/img/paulo.png)
 
-![](../assets/ci/user-story.png)
+![](./assets/img/user-story.png)
 
 Lee la historia que se encuentra registrada con un GitHub Issue en tu repositorio:
 [https://github.com/[your_username]/pet-clinic/issues](https://[[HOST_SUBDOMAIN]]-9876-[[KATACODA_HOST]].environments.katacoda.com/#user-story)
 
-# Implementa la Historia
+# Implementa la nueva Historia
 
 ✏ Nota: Para facilitar la parte práctica, modificarás el código fuente directamente desde navegador, a través de la interfaz gráfica de Github.
 
