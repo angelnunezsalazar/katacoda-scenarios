@@ -1,7 +1,7 @@
 
 ## Implementa la nueva Historia
 
-Tu eres Dan el desarrollador
+Tu eres Dan, el desarrollador
 
 ![](./assets/dario.png)
 
