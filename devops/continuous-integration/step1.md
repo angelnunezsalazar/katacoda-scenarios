@@ -2,7 +2,7 @@ Ejecuta el siguiente comando para levantar **Jenkins** y conectarlo a tu **repos
 
   `./prepare.sh`{{execute}}
 
-*Reutilizarás el GitHub 'Personal Access Token' que creaste en el módulo de Bienvenida. Si lo perdiste, ingresa a 
+*Pega en el terminal el GitHub 'Personal Access Token' que creaste en el módulo de Bienvenida. Si lo perdiste, ingresa a 
 [https://github.com/settings/tokens](https://github.com/settings/tokens) para crear un nuevo token, grábalo para usarlo después.*
 
 *El script puede tomar algunos minutos en ejecutarse.*

@@ -3,7 +3,7 @@
 
 Tu eres Dan el desarrollador
 
-![](./assets/dan.png)
+![](./assets/dario.png)
 
 y estás trabajando en la historia que ha sido priorizada por Paulo, el Product Owner.
 
@@ -14,9 +14,9 @@ y estás trabajando en la historia que ha sido priorizada por Paulo, el Product 
 Lee la historia que se encuentra registrada como un **GitHub Issue**:
 [https://github.com/[your_username]/pet-clinic/issues](https://[[HOST_SUBDOMAIN]]-9876-[[KATACODA_HOST]].environments.katacoda.com/#user-story)
 
-✏ **Nota**: Para facilitar la parte práctica, modificarás el código fuente directamente desde navegador, a través de la interfaz gráfica de Github.
-
 ## Agrega nuevas mascotas en la BD
+
+✏ **Nota**: Para facilitar la parte práctica, modificarás el código fuente directamente desde navegador, a través de la interfaz gráfica de Github.
 
 * Abre Github y navega hasta el archivo [`src/main/resources/db/hsqldb/data.sql`](https://[[HOST_SUBDOMAIN]]-9876-[[KATACODA_HOST]].environments.katacoda.com/#datasql). Este archivo es utilizado para poblar la data cuando levanta la aplicación.
 

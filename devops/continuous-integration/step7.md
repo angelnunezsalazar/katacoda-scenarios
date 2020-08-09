@@ -1,15 +1,21 @@
-Ahora que todas las verificaciones automáticas han pasado. Es momento de involucrar a Tina la tester  a que realice una revisión de pares.
+Ahora que todas las verificaciones automáticas han pasado. Es momento de involucrar a Tina la tester a que realice una revisión de pares.
+
+✏ **Nota**: Para propósitos prácticos, Tina será el bot que conectaste a tu repositorio como parte del setup.
 
 ![](./assets/img/tina.png)
 
-✏ Note: Tina es la aplicación de bot que agregaste al inicio.
+* Ingresa al listado de pull requests en GitHub [https://github.com/[your_username]/pet-clinic/pulls](https://[[HOST_SUBDOMAIN]]-9876-[[KATACODA_HOST]].environments.katacoda.com/#pr) y abre tu pull request.
 
-* En el pull request, agrega un comentario para preguntar a Tina que revise el pull request: `/tina - can you have a look at this?`{{copy}}
+* Al final de la página, agrega un comentario para preguntar a Tina que revise el pull request: `/tina - can you have a look at this?`{{copy}}
 
-* Tina luego de revisar los cambios, te pedirá que cambies 
+* Tina luego de revisar los cambios, te pedirá que realices unos pequeños ajustes.
 
-* Implementa los cambios ingresando al tab "**Files changed**", haciendo click en el ícono de lapiz al lado del archivo `data.sql`. Guarda los cambios sobre la misma rama.
+![](./assets/img/tina-bot.png)
 
-* Jenkins ejecutará nuevamente el pipeline con el último cambio para asegurarse que todas las verificaciones están pasando. Opcionalmente puedes ver la ejecución en Jenkins <a href="https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/blue/organizations/jenkins/pet-clinic/pr" target="jenkins">https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/blue/organizations/jenkins/pet-clinic/pr</a>
-* 
-* Cuando el pipeline haya finalizado OK, en el pull request aparecerá el mensaje **everything is green!**.
+* Ingresa al tab "**Files changed**", edita el archivo `data.sql` haciendo click en el menú "**...**" cerca del nombre del archivo, y selecciona "**Edit file**".
+
+* Realiza los cambios que te pide hacer Tina y realiza commit del código en la misma rama.
+
+* Jenkins ejecutará nuevamente el pipeline con el último cambio para asegurarse que todas las verificaciones están pasando..
+  
+* Cuando el pipeline haya finalizado OK, en el pull request aparecerá el mensaje **All checks have passed**.
