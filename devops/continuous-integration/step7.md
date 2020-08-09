@@ -1,8 +1,8 @@
-Ahora que todas las verificaciones automáticas han pasado. Es momento de involucrar a Tina la tester a que realice una revisión de pares.
+Ahora que todas las verificaciones automáticas han pasado. Es momento de **involucrar a Tina la tester para que realice una revisión de pares**.
 
 ✏ **Nota**: Para propósitos prácticos, Tina será el bot que conectaste a tu repositorio como parte del setup.
 
-![](./assets/img/tina.png)
+![](./assets/tina.png)
 
 * Ingresa al listado de pull requests en GitHub [https://github.com/[your_username]/pet-clinic/pulls](https://[[HOST_SUBDOMAIN]]-9876-[[KATACODA_HOST]].environments.katacoda.com/#pr) y abre tu pull request.
 
@@ -10,7 +10,7 @@ Ahora que todas las verificaciones automáticas han pasado. Es momento de involu
 
 * Tina luego de revisar los cambios, te pedirá que realices unos pequeños ajustes.
 
-![](./assets/img/tina-bot.png)
+![](./assets/tina-bot.png)
 
 * Ingresa al tab "**Files changed**", edita el archivo `data.sql` haciendo click en el menú "**...**" cerca del nombre del archivo, y selecciona "**Edit file**".
 

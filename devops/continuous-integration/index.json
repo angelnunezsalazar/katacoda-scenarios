@@ -3,7 +3,7 @@
   "private": true,
   "title": "Continuous Integration",
   "description": "Experience continuous integration, the process of merging work from all the developers in a team into the master branch as and when required.",
-  "difficulty": "básico",
+  "difficulty": "Básico",
   "time": "40 minutos",
   "details": {
     "steps": [
@@ -33,7 +33,7 @@
         "text": "step6.md"
       },
       {
-        "title": "Invita a alguien a que revise Pull Request",
+        "title": "Invita a alguien a que revise el Pull Request",
         "text": "step7.md"
       },
       {

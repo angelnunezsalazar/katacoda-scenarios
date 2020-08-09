@@ -6,13 +6,15 @@ Vamos a agregar nuevos cambios al Pull Request para corregir el error.
 
 * Reemplaza la línea "Jolly Jumper, con la siguiente línea `INSERT INTO pets VALUES (14, 'Jolly Jumper', '2012-09-20', 7, 5);`{{copy}}
 
-* En la sección **Commit changes**, ingresa un comentario, por ejemplo `Fix #1: Fix parenthesis`{{copy}}
+* En la sección **Commit changes**, ingresa un comentario, por ejemplo `US #1: Fix parenthesis`{{copy}}
 
 * Realiza commit del código en la misma rama `us-1-horse-db`.
 
 * Regresa al tab **Conversation** del Pull Request. 
 
 * Observarás que GitHub notificó nuevamente a Jenkins para que ejecute el pipeline. 
+
+    ![GitHub Pull Request OK](./assets/github-pr-ok.png)
   
 * Espera a que finalice la ejecución. Apenas finalice, en el pull request se mostrará el mensaje **All checks have passed**.
 

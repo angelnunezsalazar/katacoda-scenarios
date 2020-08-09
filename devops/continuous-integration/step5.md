@@ -11,18 +11,18 @@
 
 * Haz click en la ejecución para revisar su detalle.
 
-* Al inicio de la página verás el gráfico de ejecución del pipeline (si ya terminó la ejecución, te mostrará directamente los logs de error, desplázate hasta el inicio de la página para ver el gráfico).
+* Al inicio de la página verás el gráfico de ejecución del pipeline (si ya terminó la ejecución, al ingresar a la ejecución te mostrará directamente los logs de error, desplázate hasta el inicio de la página para ver el gráfico).
 
   ![Pipeline Fail](./assets/jenkins-pipeline-fail.png)
 
 * Las tareas que ejecuta este pipeline son las siguientes:
-  * Descargar las dependencias de la aplicación (etapa 'Build').
-  * Compilar la aplicación (etapa 'Build').
-  * Ejecutar Pruebas Unitarias (etapa 'Build').
-  * Ejecutar Pruebas de Integración (etapa 'Build').
-  * Archivar y Publicar los Resultados de las Pruebas (etapas 'Archive and Publish Unit Tests Results').
+    * **Descargar las dependencias de la aplicación** (etapa 'Build').
+    * **Compilar la aplicación** (etapa 'Build').
+    * **Ejecutar Pruebas Unitarias** (etapa 'Build').
+    * **Ejecutar Pruebas de Integración** (etapa 'Build').
+    * **Archivar y Publicar los Resultados de las Pruebas** (etapas 'Archive and Publish Unit Tests Results').
 
-* La etapa **Build** ha encontrado un error. Haz click en esta etapa y revisa brevemente los logs, encontrarás que algunas pruebas han fallado.
+* La etapa **Build** ha encontrado un error. Haz click en esta etapa y revisa brevemente los logs, **encontrarás que algunas pruebas han fallado.**
 
   ![CI Logs](./assets/ci-logs.png)
 
@@ -30,15 +30,15 @@
 
 * Retorna a la ventana de GitHub, te encontrarás en la pantalla del **Pull Request**.
 
-* Los resultados de la ejecución del pipeline de Jenkins están disponibles directamente en el pull request. A mitad de la página observarás el mensaje **All Checks have failed**. 
+* A mitad de la página observarás el mensaje **All Checks have failed**.  Los resultados de la ejecución del pipeline de Jenkins están disponibles directamente en el pull request. 
 
-  ![GitHub Checks](./assets/github-checks.png)
+  ![GitHub Checks](./assets/github-pr-failed.png)
 
 ## ¿Cuál es la mecánica de funcionamiento?
 
 * Cuando el Pull Request es creado, GitHub notifica a Jenkins a través de un Web Hook.
   
-  ✏ **Nota**: Los **Web Hook** se usan para notificar a otras aplicaciones de eventos en Github, como por ejemplo la creación de un Pull Request. Opcionalmente puedes revisar la configuración del web hook en [https://github.com/[your_username]/pet-clinic/settings/hooks](https://[[HOST_SUBDOMAIN]]-9876-[[KATACODA_HOST]].environments.katacoda.com/#hooks).
+  ✏ **Nota**: Los **Webhooks** se usan para notificar a otras aplicaciones de eventos en Github, como por ejemplo la creación de un Pull Request. Opcionalmente puedes revisar la configuración del webhook en [https://github.com/[your_username]/pet-clinic/settings/hooks](https://[[HOST_SUBDOMAIN]]-9876-[[KATACODA_HOST]].environments.katacoda.com/#hooks).
 
 * Cuando Jenkins es notificado, lee el contenido del archivo **Jenkinsfile** en la raiz del repositorio de código. Este archivo tiene la implementación de todas las etapas del pipeline de Integración Continua.
   

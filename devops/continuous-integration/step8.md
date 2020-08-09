@@ -2,7 +2,7 @@
 
 * Tina revisará y comentará positivamente los cambios.
 
-![](./assets/img/tina-bot-done.png)
+![](./assets/tina-bot-done.png)
 
 * Realiza un merge del pull request haciendo click en el botón "**Merge pull request**", y confirma el merge "**Confirm Merge**".
   

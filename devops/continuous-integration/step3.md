@@ -5,13 +5,13 @@ Tu eres Dan, el desarrollador
 
 ![](./assets/dario.png)
 
-y estás trabajando en la historia que ha sido priorizada por Paulo, el Product Owner.
+y trabajarás en la historia que ha sido priorizada por Paulo, el Product Owner.
 
 ![](./assets/paulo.png)
 
 ![](./assets/user-story.png)
 
-Lee la historia que se encuentra registrada como un **GitHub Issue**:
+Lee la historia que se encuentra registrada en GitHub:
 [https://github.com/[your_username]/pet-clinic/issues](https://[[HOST_SUBDOMAIN]]-9876-[[KATACODA_HOST]].environments.katacoda.com/#user-story)
 
 ## Agrega nuevas mascotas en la BD
@@ -28,7 +28,7 @@ Lee la historia que se encuentra registrada como un **GitHub Issue**:
   INSERT INTO types VALUES (7, 'horse');
   </pre> 
 
-* Alrededor de la línea 50, debajo de la sentencia `INSERT INTO pets VALUES (13, 'Sly', '2012-06-08', 1, 10);`, agrega las siguientes líneas para agregar dos nuevos caballos:
+* En la línea 50, debajo de la sentencia `INSERT INTO pets VALUES (13, 'Sly', '2012-06-08', 1, 10);`, agrega las siguientes líneas para agregar dos nuevos caballos:
 
   <pre class="file" data-target="clipboard">
   INSERT INTO pets VALUES (14, 'Jolly Jumper', '2012-09-20', 7, 5;

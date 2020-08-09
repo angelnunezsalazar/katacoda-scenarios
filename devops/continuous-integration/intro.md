@@ -4,7 +4,7 @@ Bienvenido al laboratorio de **Continuous Integration**.
 
 ## Contexto
 
-* Dan es un desarrollar que forma parte de un equipo que aplica los principios de trabajar en pequeños batches y construir con calidad, apoyados de Continuous Integration y un alto número de pruebas automatizadas.
+* Dan es un desarrollador que forma parte de un equipo que aplica los principios de trabajar en pequeños batches y construir con calidad, apoyados de Continuous Integration y un alto número de pruebas automatizadas.
 
 * Todos los desarrolladores continuamente integran su trabajo a la rama    principal (Master). Usan ramas de vida corta (Feature Branches) que son rápidamente integradas en master.
 
