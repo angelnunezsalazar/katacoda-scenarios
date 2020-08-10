@@ -1,8 +1,8 @@
 {
-  "pathwayTitle": "Online DevOps Dojo",
-  "private": true,
+  "pathwayTitle": "DevOps Labs",
+  "private": false,
   "title": "Continuous Integration",
-  "description": "Experience continuous integration, the process of merging work from all the developers in a team into the master branch as and when required.",
+  "description": "Continuous Integration",
   "difficulty": "Básico",
   "time": "40 minutos",
   "details": {

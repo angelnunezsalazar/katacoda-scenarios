@@ -10,7 +10,3 @@ Ejecuta el siguiente comando para levantar **Jenkins** y conectarlo a tu **repos
 Espera el mensaje "**Click on 'CONTINUE'**"
 
 ✏ **Nota**: **Jenkins** es una herramienta open source utilizada para facilitar la práctica de Continuous Integration y la creación de Pipelines de CI/CD.
-
-💡 **TIP**: 🦊 Firefox user? Use <kbd>CTRL</kbd>+<kbd>INS</kbd> /
-<kbd>SHIFT</kbd>+<kbd>INS</kbd> to copy/paste your Personal Access Token in the
-window.
