@@ -1,7 +1,7 @@
 
 ## Ejecución del Job en Jenkins
 
-* Apenas se creó el pull request, Github notificó a Jenkins que ejecuté el pipeline de integración continua.
+* Apenas se creó el pull request, **GitHub notificó a Jenkins** que ejecuté el pipeline de integración continua.
 
 * Ingresa a Jenkins para ver qué está sucediendo <a href="https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/blue/organizations/jenkins/pet-clinic/activity/" target="jenkins">https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/blue/organizations/jenkins/pet-clinic/activity/</a>
 
@@ -20,7 +20,9 @@
     * **Compilar la aplicación** (etapa 'Build').
     * **Ejecutar Pruebas Unitarias** (etapa 'Build').
     * **Ejecutar Pruebas de Integración** (etapa 'Build').
-    * **Archivar y Publicar los Resultados de las Pruebas** (etapas 'Archive and Publish Unit Tests Results').
+    * **Publicar los Resultados de las Pruebas** (etapas 'Publish Unit Tests Results').
+    * **Crear y Publicar la Imagen Docker** (etapa 'Create and Publish Docker Image')
+    * **Desplegar en Desarrollo** (etapa 'Deploy Development')
 
 * La etapa **Build** ha encontrado un error. Haz click en esta etapa y revisa brevemente los logs, **encontrarás que algunas pruebas han fallado.**
 

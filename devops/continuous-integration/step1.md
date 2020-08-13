@@ -8,5 +8,3 @@ Ejecuta el siguiente comando para **levantar tu Ambiente de Trabajo y conectarlo
 *El script puede tomar algunos minutos en ejecutarse.*
 
 Espera el mensaje "**Click on 'CONTINUE'**"
-
-✏ **Nota**: **Jenkins** es una herramienta open source utilizada para facilitar la práctica de Continuous Integration y la creación de Pipelines de CI/CD.

@@ -14,7 +14,7 @@ Ahora que todas las verificaciones automáticas han pasado. Es momento de **invo
 
 * Ingresa al tab "**Files changed**", edita el archivo `data.sql` haciendo click en el menú "**...**" cerca del nombre del archivo, y selecciona "**Edit file**".
 
-* Realiza los cambios que te pide hacer Tina y realiza commit del código en la misma rama.
+* **Realiza los cambios que te pide hacer Tina** y realiza commit del código en la misma rama.
 
 * Jenkins ejecutará nuevamente el pipeline con el último cambio para asegurarse que todas las verificaciones están pasando..
   

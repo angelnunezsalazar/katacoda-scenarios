@@ -17,7 +17,7 @@
         "text": "step2.md"
       },
       {
-        "title": "Una nueva Historia de Usuario",
+        "title": "Implementa una nueva Historia de Usuario",
         "text": "step3.md"
       },
       {
@@ -39,6 +39,10 @@
       {
         "title": "Integra los cambios en Master",
         "text": "step8.md"
+      },
+      {
+        "title": "Revisa el Paquete de Despliegue",
+        "text": "step9.md"
       }
     ],
     "intro": {
