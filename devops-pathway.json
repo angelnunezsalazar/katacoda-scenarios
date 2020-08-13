@@ -3,6 +3,11 @@
   "description": "Laboratorios de prácticas y herramientas de DevOps",
   "courses": [
     {
+      "title": "Bienvenida",
+      "description": "Entenderás el contexto del equipo y la aplicación, y prepararás tu ambiente de trabajo",
+      "course_id": "bienvenida"
+    },
+    {
       "title": "Continuous Integration",
       "description": "Experimentarás un flujo de trabajo de Continuous Integration",
       "course_id": "continuous-integration"

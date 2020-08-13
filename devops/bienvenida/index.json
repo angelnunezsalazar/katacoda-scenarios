@@ -6,17 +6,17 @@
   "details": {
     "steps": [
       {
-        "title": "The story",
+        "title": "La Historia",
         "text": "step1.md"
       },
       {
-        "title": "Setup the Pet-Clinic repository",
-        "text": "step3.md",
-        "verify": "step3-verify.sh"
+        "title": "Setup del Repositorio de Código",
+        "text": "step2.md",
+        "verify": "step2-verify.sh"
       },
       {
-        "title": "Setup the DevOps Dojo bot",
-        "text": "step4.md"
+        "title": "Setup Equipo Virtual (Bot)",
+        "text": "step3.md"
       }
     ],
     "intro": {
