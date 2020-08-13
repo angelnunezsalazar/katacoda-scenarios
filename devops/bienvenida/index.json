@@ -1,8 +1,8 @@
 {
-  "pathwayTitle": "Online DevOps Dojo",
-  "private": true,
+  "pathwayTitle": "DevOps Labs",
+  "private": false,
   "description": "Getting started with the Online DevOps Dojo: understanding the back story, setting up your environment.",
-  "time": "30 minutes",
+  "time": "20 minutes",
   "details": {
     "steps": [
       {
@@ -10,12 +10,12 @@
         "text": "step1.md"
       },
       {
-        "title": "Setup del Repositorio de Código",
+        "title": "Preparación del Repositorio de Código",
         "text": "step2.md",
         "verify": "step2-verify.sh"
       },
       {
-        "title": "Setup Equipo Virtual (Bot)",
+        "title": "Tu Equipo Virtual (Bot)",
         "text": "step3.md"
       }
     ],
