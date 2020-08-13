@@ -7,4 +7,5 @@ Acabas de experimentar un flujo de trabajo de Continuous Integration:
 * Ejecutar automáticamente el pipeline de Continuous Integration.
 * Obtener los resultados de las verificaciones en el pipeline.
 * Buscar retroalimentación mediante una revisión de pares.
-* Finalmente, realizar un merge del cambio en la rama principal.
+* Realizar un merge del cambio en la rama principal.
+* Publicar el paquete de despliegue que será promocionado en los siguientes ambientes.

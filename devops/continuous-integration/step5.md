@@ -9,6 +9,8 @@
 
   ![Run Pull Request](./assets/jenkins-pr-runs.png)
 
+    ✏ **Nota**: Encontrarás dos ejecuciones: la primera corresponde al commit en la rama y la última corresponde a la creación del pull request.
+
 * Haz click en la ejecución para revisar su detalle.
 
 * Al inicio de la página verás el gráfico de ejecución del pipeline (si ya terminó la ejecución, al ingresar a la ejecución te mostrará directamente los logs de error, desplázate hasta el inicio de la página para ver el gráfico).
