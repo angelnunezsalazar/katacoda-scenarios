@@ -7,8 +7,6 @@ COLINFO="\u001b[37m"
 COLLOGS="\u001b[35m"
 COLRESET="\u001b[m"
 REPO=pet-clinic
-ORGREPO=DevOpsLabsOnline
-
 if [ "$DEBUG" = false ] ; then
   CURL_NODEBUG="-sS"
 fi

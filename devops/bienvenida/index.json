@@ -6,11 +6,11 @@
   "details": {
     "steps": [
       {
-        "title": "La Historia",
+        "title": "Contexto de la Aplicación",
         "text": "step1.md"
       },
       {
-        "title": "Preparación del Repositorio de Código",
+        "title": "Preparación tu Ambiente de Trabajo",
         "text": "step2.md",
         "verify": "step2-verify.sh"
       },

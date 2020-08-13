@@ -4,7 +4,7 @@
   "courses": [
     {
       "title": "Bienvenida",
-      "description": "Entenderás el contexto del equipo y la aplicación, y prepararás tu ambiente de trabajo",
+      "description": "Entenderás el contexto de la aplicación y prepararás tu ambiente de trabajo",
       "course_id": "bienvenida"
     },
     {
