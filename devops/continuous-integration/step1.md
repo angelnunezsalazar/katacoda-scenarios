@@ -1,4 +1,4 @@
-Ejecuta el siguiente comando para levantar **Jenkins** y conectarlo a tu **repositorio de GitHub 'Pet Clinic'**. 
+Ejecuta el siguiente comando para **levantar tu Ambiente de Trabajo y conectarlo a tu repositorio de GitHub 'Pet Clinic'**. 
 
   `./prepare.sh`{{execute}}
 

@@ -24,7 +24,7 @@
     },
      "assets": {
       "host01": [
-        { "file": "copy-pet-clinic.sh", "target": "~/", "chmod": "+x" },
+        { "file": "setup-pet-clinic.sh", "target": "~/", "chmod": "+x" },
         { "file": "github-labels.py", "target": "~/", "chmod": "+x" },
         { "file": "github-issues.py", "target": "~/", "chmod": "+x" },
         { "file": "github-labels.yaml", "target": "~/"},

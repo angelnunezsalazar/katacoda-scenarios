@@ -26,9 +26,11 @@ Generarás un token de acceso que se utilizará para conectar los ambientes de t
 * Click en **Generate token.**
 * **Copia el token y guárdalo en tus notas, se necesitará a lo largo de este y de los siguientes laboratorios.** Si pierdes el token, tendrás que generar uno nuevo.
 
-## Realiza una Copia del Repositorio base
+## Realiza una Copia del Repositorio
 
-* Ingresa al repositorio donde se encuentra el código base [[github.com](https://github.com/devopslabsonline/pet-clinic)](https://github.com/devopslabsonline/pet-clinic).
+Realizarás una copia del repositorio de código a tu propia cuenta de GitHub.
+
+* Ingresa al repositorio donde se encuentra el código [[github.com](https://github.com/devopslabsonline/pet-clinic)](https://github.com/devopslabsonline/pet-clinic).
 
 * Para copiar este repositorio a tu cuenta, en la parte superior derecha de la pantalla haz clic en **Fork**.
 
@@ -39,6 +41,8 @@ Generarás un token de acceso que se utilizará para conectar los ambientes de t
 * Cuando termine el proceso de copia, aparecerá el repositorio asociado a tu cuenta y verás la estructura de archivos del mismo.
 
 ## Habilita el seguimiento de tareas en GitHub (GitHub Issues)
+
+Utilizaremos GitHub Issues para registrar y gestionar historias de usuario a implementar.
 
 * En tu repositorio de Github, ingresa al **tab 'Settings'.**
 
@@ -52,6 +56,6 @@ Generarás un token de acceso que se utilizará para conectar los ambientes de t
 
 Ejecuta el siguiente script para generar algunas historias de usuario que se implementarán posteriormente. Estas historias se generarán como **GitHub Issues**.
 
-  `./copy-pet-clinic.sh`{{execute}}
+  `./setup-pet-clinic.sh`{{execute}}
 
 Este script te pedirá **ingresar tu Personal Access Token**.

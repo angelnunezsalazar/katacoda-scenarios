@@ -1,4 +1,4 @@
-**Jenkins se encuentra levantado.**
+**Jenkins se encuentra levantado**
 
 * Ingresa a Jenkins utilizando la siguiente URL
   <a href="https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/blue/organizations/jenkins/"

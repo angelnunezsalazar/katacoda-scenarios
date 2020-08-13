@@ -1,11 +1,11 @@
 
 ## Implementa la nueva Historia
 
-Tu eres Dan, el desarrollador
+Tu eres Dan, el desarrollador.
 
 ![](./assets/dario.png)
 
-y trabajarás en la historia que ha sido priorizada por Paulo, el Product Owner.
+Trabajarás en una historia que ha sido priorizada por Paulo, el Product Owner.
 
 ![](./assets/paulo.png)
 
