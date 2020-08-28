@@ -10,7 +10,7 @@
         "text": "step1.md"
       },
       {
-        "title": "Preparación tu Ambiente de Trabajo",
+        "title": "Preparación de tu Ambiente de Trabajo",
         "text": "step2.md",
         "verify": "step2-verify.sh"
       },
