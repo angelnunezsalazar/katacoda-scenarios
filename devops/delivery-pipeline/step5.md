@@ -8,51 +8,102 @@ Editarás el archivo `Jenkinsfile` para agregar nuevas actividades al pipeline.
 
 * Agrega las siguientes actividades al pipeline.
 
-**Aprobación para iniciar el despliegue en el ambiente de Producción** 
+**Aprobación del tester para iniciar el despliegue en el ambiente de Test** 
 
-Debajo del bloque `stage('End to End Tests'){..}`, agrega las siguientes líneas:
+En la línea 47, debajo del bloque `stage('Deploy Development'){..}`, agrega las siguientes líneas:
 
 <pre class="file" data-target="clipboard">
-stage('Decide Deploy to Prod'){
+stage('Decide Deploy to Test'){
     when {
         branch 'master'
     }
     agent none
     steps {
-        input message: 'Deploy to Prod?'
+        input message: 'Deploy to Test?'
     }            
 }
-</pre>
+</pre> 
 
-**Desplegar en Producción** 
+✏ **Nota**: la directiva `when { branch 'master' }` le indica al pipeline que el stage solo se ejecutará en la rama `master`.
+
+✏ **Nota**: el step `input` pausa la ejecución del pipeline y permite a una persona interactuar y controlar el flujo del pipeline (continuar o cancelar, proveer información).
+
+**Desplegar en Test** 
 
 * El despliegue consisten en detener el contenedor anterior y ejecutar la nueva versión.
 
 * Debajo del bloque `stage('Decide Deploy to Test'){..}`, agrega las siguientes líneas:
 
     <pre class="file" data-target="clipboard">
-    stage('Deploy Prod'){
+    stage('Deploy Test'){
         when {
             branch 'master'
         }
         agent any
         steps {
             sh '''
-                for runName in `docker ps | grep "alpine-petclinic-prod" | awk '{print $1}'`
+                for runName in `docker ps | grep "alpine-petclinic-test" | awk '{print $1}'`
                 do
                     if [ "$runName" != "" ]
                     then
                         docker stop $runName
                     fi
                 done
-                docker run --name alpine-petclinic-prod --rm -d -p 9968:8080 $TAG_NAME
+                docker run --name alpine-petclinic-test --rm -d -p 9967:8080 $TAG_NAME
             '''
         }
-    }   
+    }
+    </pre> 
+
+    ✏ **Nota**: el step `sh` ejecuta cualquier script de linux.
+
+**Pruebas End to End**
+
+* En la carpeta `/src/test/selenium-robot` hay pruebas automatizadas de interfaz gráfica utilizando **selenium**.
+
+    ✏ **Nota**: **Selenium** es una framework que permite automatizar la interacción con páginas web a través del navegador.
+
+* Las pruebas se ejecutarán sobre un navegador Firefox que se levantará en un contenedor, al finalizar las pruebas se retornarán los resultados y se apagará el contenedor. Toda esta lógica se encuentra en el archivo `./robot.sh`.
+
+* Debajo del bloque `stage('Deploy Test'){..}`, agrega las siguientes líneas:
+
+    <pre class="file" data-target="clipboard">
+        stage("End to End Tests") {
+            when {
+                branch 'master'
+            }
+            agent any
+            steps {
+                sh "chmod +x robot.sh"
+                sh "./robot.sh"
+            }
+        }    
     </pre>
 
 ## Probar el pipeline
 
-* En la sección **Commit changes**, ingresa un comentario, por ejemplo `Pipeline: producción`{{copy}}
+* En la sección **Commit changes**, ingresa un comentario, por ejemplo `Pipeline: test stages`{{copy}}
 
 * Realiza commit del código en la misma rama `master`.
+
+* Ingresa a Jenkins para ver qué está sucediendo <a href="https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/blue/organizations/jenkins/pet-clinic/activity/" target="jenkins">https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/blue/organizations/jenkins/pet-clinic/activity/</a>
+
+* Observarás que está en progreso la ejecución de un pipeline asociado al commit en la rama `master`.
+
+* Haz click en la ejecución para revisar su detalle y espera a que se detenga en la etapa **Decide Deploy to Test**.
+
+  ![Pipeline Decide Deploy Test](./assets/pipeline-decide-deploy-test.png)
+
+* Haz click en el botón **Proceed** para continuar con la ejecución.
+
+* La ejecución continuará, espera que finalice en la etapa **End To End Test**, demorará unos segundos.
+
+  ![Pipeline with Test Stages](./assets/pipepline-with-test-stages.png)
+
+* Debajo del gráfico de ejecución se encuentra una lista desplegable con los logs de ejecución (`General SCM`, `chmod +x`, `./robot.sh`)
+
+   ![List Execution Logs](./assets/list-execution-logs.png) 
+  
+* Haz click en **./robot.sh**, revisa brevemente los logs, **encontrarás el listado de las pruebas End to End que se han ejecutado.**
+
+  ![Test Results](./assets/test-results.png)
