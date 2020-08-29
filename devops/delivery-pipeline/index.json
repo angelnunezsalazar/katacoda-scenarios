@@ -8,7 +8,7 @@
   "details": {
     "steps": [
       {
-        "title": "Preparación",
+        "title": "Preparación del Ambiente",
         "text": "step1.md",
         "verify": "step1-verify.sh"
       },
@@ -17,16 +17,20 @@
         "text": "step2.md"
       },
       {
-        "title": "Características de Nuestro Delivery Pipeline",
+        "title": "Preparación del Código Fuente",
         "text": "step3.md"
       },
       {
-        "title": "Actividades de Test",
+        "title": "Nuestro Delivery Pipeline",
         "text": "step4.md"
       },
       {
-        "title": "Actividades de Producción",
+        "title": "Etapas de Test",
         "text": "step5.md"
+      },
+      {
+        "title": "Etapas de Producción",
+        "text": "step6.md"
       }
     ],
     "intro": {

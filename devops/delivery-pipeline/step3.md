@@ -1,8 +1,9 @@
-El delivery pipeline que implementaremos tendrá la siguientes características.
+Para el funcionamiento del laboratorio necesitas integrar unos pequeños cambios del repositorio base `devopslabsonline/pet-clinic` al repositorio de tu cuenta. 
 
-* **Iniciará apenas se detecte un cambio en la rama `Master`**.
-* **Incluirá algunas actividades del pipeline de Continuous Integration**: Compilar, Pruebas Unitarias,  Pruebas de Integración, Publicar la Imagen Docker.
-* Tendrá actividades adicionales que permitan **llevar la imagen docker a través del ambiente de test hasta producción**.
-* Tendrá **actividades automatizadas** (Desplegar, Pruebas End-to-End) **y actividades manuales** (Aprobaciones)
+* Ingresa a tu repositorio de código fuente [https://github.com/devopslabsonline/pet-clinic](https://github.com/devopslabsonline/pet-clinic).
 
-En los siguienes pasos agregarás las nuevas actividades al pipeline.
+* Observarás que hay un mensaje **This branch is X commits behind DevOpsLabsOnline:master**, haz clic en el enlace **Pull Request** que se encuentra a la derecha del mensaje.
+
+* Cargará la pantalla **Comparing Changes**.
+
+* Asegúrate que la petición es integrar **'DevOpsLabsOnline/master' -> 'USUARIO/master'**

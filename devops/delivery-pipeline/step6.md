@@ -1,12 +1,12 @@
-## Agregar Nuevas Actividades
+## Agregar Nuevas Etapas
 
-Editarás el archivo `Jenkinsfile` para agregar nuevas actividades al pipeline.
+Editarás el archivo `Jenkinsfile` para agregar nuevas etapas al pipeline.
 
 * Abre Github y navega hasta el archivo [`Jenkinsfile`](https://[[HOST_SUBDOMAIN]]-9876-[[KATACODA_HOST]].environments.katacoda.com/#jenkinsfile) del repositorio Pet Clinic.
 
 * Para editar el archivo, has click en el **ícono de lapiz** en la parte superior derecha del archivo.
 
-* Agrega las siguientes actividades al pipeline.
+* Agrega las siguientes etapas al pipeline.
 
 **Aprobación para iniciar el despliegue en el ambiente de Producción** 
 
@@ -55,7 +55,7 @@ stage('Decide Deploy to Prod'){
 
 * En la sección **Commit changes**, ingresa un comentario, por ejemplo `Pipeline: production stages`{{copy}}
 
-* Realiza commit del código en la misma rama `master`.
+* Realiza commit en la misma rama `master`.
 
 * Ingresa a Jenkins para ver qué está sucediendo <a href="https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/blue/organizations/jenkins/pet-clinic/activity/" target="jenkins">https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/blue/organizations/jenkins/pet-clinic/activity/</a>
 
