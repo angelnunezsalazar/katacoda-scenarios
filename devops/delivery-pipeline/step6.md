@@ -1,6 +1,6 @@
 ## Agregar Nuevas Etapas
 
-Editarás el archivo `Jenkinsfile` para agregar nuevas etapas al pipeline.
+Editarás nuevamente el archivo `Jenkinsfile` para agregar más etapas al pipeline.
 
 * Abre Github y navega hasta el archivo [`Jenkinsfile`](https://[[HOST_SUBDOMAIN]]-9876-[[KATACODA_HOST]].environments.katacoda.com/#jenkinsfile) del repositorio Pet Clinic.
 
@@ -53,8 +53,6 @@ stage('Decide Deploy to Prod'){
 
 ## Probar el pipeline
 
-* En la sección **Commit changes**, ingresa un comentario, por ejemplo `Pipeline: production stages`{{copy}}
-
 * Realiza commit en la misma rama `master`.
 
 * Ingresa a Jenkins para ver qué está sucediendo <a href="https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/blue/organizations/jenkins/pet-clinic/activity/" target="jenkins">https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/blue/organizations/jenkins/pet-clinic/activity/</a>
@@ -63,14 +61,14 @@ stage('Decide Deploy to Prod'){
 
 * Haz click en la ejecución para revisar su detalle y espera a que se detenga en la etapa **Decide Deploy to Test**.
 
-  ![Imagen](./assets/imagen.png)
-
 * Haz click en el botón **Proceed** para continuar con la ejecución.
 
 * La ejecución continuará, espera que finalice en la etapa **Decide Deploy to Prod**.
+
+    ![Pipeline Decide Deploy Prod](./assets/pipeline-decide-deploy-prod.png)
 
 * Haz click en el botón **Proceed** para continuar con la ejecución.
 
 * La ejecución continuará, espera que finalice en la etapa **Deploy to Prod**.
 
-  ![Imagen](./assets/imagen.png)
+    ![Pipeline Deploy Prod](./assets/pipeline-deploy-prod.png)
