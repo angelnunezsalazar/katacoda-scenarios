@@ -59,3 +59,6 @@ Ejecuta el siguiente script para generar algunas historias de usuario que se imp
   `./setup-pet-clinic.sh`{{execute}}
 
 Este script te pedirá **ingresar tu Personal Access Token**.
+
+💡 **TIP**: 🦊 ¿Usas Firefox? es probable que el token no se copie con <kbd>CTRL</kbd>+<kbd>V</kbd>.
+Usa <kbd>CTRL</kbd>+<kbd>INS</kbd> para copiar el token y <kbd>SHIFT</kbd>+<kbd>INS</kbd> para pegarlo en la ventana del terminal.

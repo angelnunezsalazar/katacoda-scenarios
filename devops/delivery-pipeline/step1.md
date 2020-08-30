@@ -11,3 +11,12 @@ Espera el mensaje "**Click on 'CONTINUE'**"
 
 💡 **TIP**: 🦊 ¿Usas Firefox? es probable que el token no se copie con <kbd>CTRL</kbd>+<kbd>V</kbd>.
 Usa <kbd>CTRL</kbd>+<kbd>INS</kbd> para copiar el token y <kbd>SHIFT</kbd>+<kbd>INS</kbd> para pegarlo en la ventana del terminal.
+
+    <pre class="file" data-target="clipboard">
+stage('Decide Deploy to Prod'){
+    when {
+        branch 'master'
+    }
+    agent none         
+}
+    </pre>
