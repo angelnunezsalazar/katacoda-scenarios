@@ -24,11 +24,15 @@ Editarás nuevamente el archivo `Jenkinsfile` para agregar más etapas al pipeli
   }
   </pre>
 
+* Deberá quedar similar a la siguiente imagen.
+
+  ![Jenkinsfile Decide Deploy Prod](./assets/jenkinsfile-decide-deploy-prod.png)
+
 **2. Desplegar en Producción** 
 
 * El despliegue consisten en detener el contenedor anterior y ejecutar la nueva versión.
 
-* Debajo del bloque `stage('Decide Deploy to Test'){..}`, agrega las siguientes líneas:
+* Debajo del bloque `stage('Decide Deploy to Prod'){..}`, agrega las siguientes líneas:
 
   <pre class="file" data-target="clipboard">
   stage('Deploy Prod'){
@@ -51,9 +55,15 @@ Editarás nuevamente el archivo `Jenkinsfile` para agregar más etapas al pipeli
   }   
   </pre>
 
+* Deberá quedar similar a la siguiente imagen.
+
+  ![Jenkinsfile End to End Test](./assets/jenkinsfile-deploy-prod.png)
+
 ## Probar el pipeline
 
-* Realiza commit en la misma rama `master`.
+* En la sección **Commit changes**, ingresa un comentario, por ejemplo `Pipeline: prod stages`{{copy}}
+
+* Realiza commit directamente en la rama `master`.
 
 * Ingresa a Jenkins para ver qué está sucediendo <a href="https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/blue/organizations/jenkins/pet-clinic/activity/" target="jenkins">https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/blue/organizations/jenkins/pet-clinic/activity/</a>
 
