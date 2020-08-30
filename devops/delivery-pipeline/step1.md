@@ -18,13 +18,13 @@ Usa <kbd>CTRL</kbd>+<kbd>INS</kbd> para copiar el token y <kbd>SHIFT</kbd>+<kbd>
 
   <pre class="file" data-target="clipboard">
   stage('Decide Deploy to Test'){
-        when {
-            branch 'master'
-        }
-        agent none
-        steps {
-            input message: 'Deploy to Test?'
-        }            
+      when {
+          branch 'master'
+      }
+      agent none
+      steps {
+          input message: 'Deploy to Test?'
+      }            
   }
   </pre> 
 
@@ -38,27 +38,25 @@ Usa <kbd>CTRL</kbd>+<kbd>INS</kbd> para copiar el token y <kbd>SHIFT</kbd>+<kbd>
 
 * Debajo del bloque `stage('Decide Deploy to Test'){..}`, agrega las siguientes líneas:
 
-<pre class="file" data-target="clipboard">
-stage('Deploy Test'){
-    when {
-        branch 'master'
-    }
-    agent any
-    steps {
-        sh '''
-            for runName in `docker ps | grep "alpine-petclinic-test" | awk '{print $1}'`
-            do
-                if [ "$runName" != "" ]
-                then
-                    docker stop $runName
-                fi
-            done
-            docker run --name alpine-petclinic-test --rm -d -p 9967:8080 $TAG_NAME
-        '''
-    }
-}
-</pre> 
+  <pre class="file" data-target="clipboard">
+  stage('Deploy Test'){
+      when {
+          branch 'master'
+      }
+      agent any
+      steps {
+          sh '''
+              for runName in `docker ps | grep "alpine-petclinic-test" | awk '{print $1}'`
+              do
+                  if [ "$runName" != "" ]
+                  then
+                      docker stop $runName
+                  fi
+              done
+              docker run --name alpine-petclinic-test --rm -d -p 9967:8080 $TAG_NAME
+          '''
+      }
+  }
+  </pre> 
 
-    ✏ **Nota**: el step `sh` ejecuta cualquier script de linux.
-    
   ✏ **Nota**: el step `sh` ejecuta cualquier script de linux.
