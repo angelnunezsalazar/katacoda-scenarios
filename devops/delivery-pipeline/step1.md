@@ -33,18 +33,20 @@ stage('Decide Deploy to Prod'){
 * hola mundo
 
     <pre class="file" data-target="clipboard">
-    stage('Decide Deploy to Prod'){
-        when {
-            branch 'master'
-        }
-        agent none         
+stage('Decide Deploy to Prod'){
+    when {
+        branch 'master'
     }
+    agent none         
+}
     </pre>
+
+* hola mundo
 
     <pre class="file" data-target="clipboard">stage('Decide Deploy to Prod'){
     when {
         branch 'master'
     }
     agent none         
-    }
+}
     </pre>
