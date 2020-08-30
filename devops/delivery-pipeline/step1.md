@@ -16,19 +16,19 @@ Usa <kbd>CTRL</kbd>+<kbd>INS</kbd> para copiar el token y <kbd>SHIFT</kbd>+<kbd>
 
 * Entre la línea 47 y 48, debajo del bloque `stage('Deploy Development'){..}`, agrega las siguientes líneas:
 
-<pre class="file" data-target="clipboard">
-stage('Decide Deploy to Test'){
-    when {
-        branch 'master'
-    }
-    agent none
-    steps {
-        input message: 'Deploy to Test?'
-    }            
-}
-</pre> 
+  <pre class="file" data-target="clipboard">
+  stage('Decide Deploy to Test'){
+        when {
+            branch 'master'
+        }
+        agent none
+        steps {
+            input message: 'Deploy to Test?'
+        }            
+  }
+  </pre> 
 
-    ✏ **Nota**: la directiva `when { branch 'master' }` le indica al pipeline que el stage solo se ejecutará en la rama `master`.
+  ✏ **Nota**: la directiva `when { branch 'master' }` le indica al pipeline que el stage solo se ejecutará en la rama `master`.
 
   ✏ **Nota**: el step `input` pausa la ejecución del pipeline y permite a una persona interactuar y controlar el flujo del pipeline (continuar o cancelar, proveer información).
 
@@ -60,3 +60,5 @@ stage('Deploy Test'){
 </pre> 
 
     ✏ **Nota**: el step `sh` ejecuta cualquier script de linux.
+    
+  ✏ **Nota**: el step `sh` ejecuta cualquier script de linux.
