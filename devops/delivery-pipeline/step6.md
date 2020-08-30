@@ -12,17 +12,17 @@ Editarás nuevamente el archivo `Jenkinsfile` para agregar más etapas al pipeli
 
 * Debajo del bloque `stage('End to End Tests'){..}`, agrega las siguientes líneas:
 
-    <pre class="file" data-target="clipboard">
-stage('Decide Deploy to Prod'){
-    when {
-        branch 'master'
-    }
-    agent none
-    steps {
-        input message: 'Deploy to Prod?'
-    }            
-}
-    </pre>
+  <pre class="file" data-target="clipboard">
+  stage('Decide Deploy to Prod'){
+      when {
+          branch 'master'
+      }
+      agent none
+      steps {
+          input message: 'Deploy to Prod?'
+      }            
+  }
+  </pre>
 
 **2. Desplegar en Producción** 
 
@@ -30,26 +30,26 @@ stage('Decide Deploy to Prod'){
 
 * Debajo del bloque `stage('Decide Deploy to Test'){..}`, agrega las siguientes líneas:
 
-    <pre class="file" data-target="clipboard">
-stage('Deploy Prod'){
-    when {
-        branch 'master'
-    }
-    agent any
-    steps {
-        sh '''
-            for runName in `docker ps | grep "alpine-petclinic-prod" | awk '{print $1}'`
-            do
-                if [ "$runName" != "" ]
-                then
-                    docker stop $runName
-                fi
-            done
-            docker run --name alpine-petclinic-prod --rm -d -p 9968:8080 $TAG_NAME
-        '''
-    }
-}   
-    </pre>
+  <pre class="file" data-target="clipboard">
+  stage('Deploy Prod'){
+      when {
+          branch 'master'
+      }
+      agent any
+      steps {
+          sh '''
+              for runName in `docker ps | grep "alpine-petclinic-prod" | awk '{print $1}'`
+              do
+                  if [ "$runName" != "" ]
+                  then
+                      docker stop $runName
+                  fi
+              done
+              docker run --name alpine-petclinic-prod --rm -d -p 9968:8080 $TAG_NAME
+          '''
+      }
+  }   
+  </pre>
 
 ## Probar el pipeline
 
@@ -65,10 +65,10 @@ stage('Deploy Prod'){
 
 * La ejecución continuará, espera que finalice en la etapa **Decide Deploy to Prod**.
 
-    ![Pipeline Decide Deploy Prod](./assets/pipeline-decide-deploy-prod.png)
+  ![Pipeline Decide Deploy Prod](./assets/pipeline-decide-deploy-prod.png)
 
 * Haz click en el botón **Proceed** para continuar con la ejecución.
 
 * La ejecución continuará, espera que finalice en la etapa **Deploy to Prod**.
 
-    ![Pipeline Deploy Prod](./assets/pipeline-deploy-prod.png)
+  ![Pipeline Deploy Prod](./assets/pipeline-deploy-prod.png)

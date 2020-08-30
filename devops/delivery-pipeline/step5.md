@@ -11,7 +11,7 @@ Editarás el archivo `Jenkinsfile` para agregar etapas al pipeline.
 
 **1. Aprobación del tester para iniciar el despliegue en el ambiente de Test** 
 
-* Entre la línea 47 y 48, debajo del bloque `stage('Deploy Development'){..}`, agrega las siguientes líneas:
+* Debajo de la línea 47, debajo del bloque `stage('Deploy Development'){..}`, agrega las siguientes líneas:
 
   <pre class="file" data-target="clipboard">
   stage('Decide Deploy to Test'){
@@ -28,6 +28,10 @@ Editarás el archivo `Jenkinsfile` para agregar etapas al pipeline.
   ✏ **Nota**: la directiva `when { branch 'master' }` le indica al pipeline que el stage solo se ejecutará en la rama `master`.
 
   ✏ **Nota**: el step `input` pausa la ejecución del pipeline y permite a una persona interactuar y controlar el flujo del pipeline (continuar o cancelar, proveer información).
+
+* Deberá quedar similar a la siguiente imagen.
+
+  ![Jenkinsfile Decide Deploy Test](./assets/jenkinsfile-decide-deploy-test.png)
 
 **2. Desplegar en Test** 
 
@@ -58,6 +62,10 @@ Editarás el archivo `Jenkinsfile` para agregar etapas al pipeline.
 
   ✏ **Nota**: el step `sh` ejecuta cualquier script de linux.
 
+* Deberá quedar similar a la siguiente imagen.
+
+  ![Jenkinsfile Deploy Test](./assets/jenkinsfile-deploy-test.png)
+
 **3. Pruebas End to End**
 
 * En la carpeta `/src/test/selenium-robot` hay pruebas automatizadas de interfaz gráfica utilizando **selenium**.
@@ -81,11 +89,15 @@ Editarás el archivo `Jenkinsfile` para agregar etapas al pipeline.
   }    
   </pre>
 
+* Deberá quedar similar a la siguiente imagen.
+
+  ![Jenkinsfile End to End Test](./assets/jenkinsfile-end-to-end-test.png)
+
 ## Probar el pipeline
 
 * En la sección **Commit changes**, ingresa un comentario, por ejemplo `Pipeline: test stages`{{copy}}
 
-* Realiza commit en la misma rama `master`.
+* Realiza commit directamente en la rama `master`.
 
 * Ingresa a Jenkins para ver qué está sucediendo <a href="https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/blue/organizations/jenkins/pet-clinic/activity/" target="jenkins">https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/blue/organizations/jenkins/pet-clinic/activity/</a>
 
