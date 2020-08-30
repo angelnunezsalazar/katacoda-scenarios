@@ -10,4 +10,4 @@ Ejecuta el siguiente comando para **levantar tu Ambiente de Trabajo y conectarlo
 Espera el mensaje "**Click on 'CONTINUE'**"
 
 💡 **TIP**: 🦊 ¿Usas Firefox? es probable que el token no se copie con <kbd>CTRL</kbd>+<kbd>V</kbd>.
-Usa <kbd>CTRL</kbd>+<kbd>INS</kbd> para copiar tu token de GitHub y <kbd>SHIFT</kbd>+<kbd>INS</kbd> para pegarlo en la ventana del terminal.
+Usa <kbd>CTRL</kbd>+<kbd>INS</kbd> para copiar el token y <kbd>SHIFT</kbd>+<kbd>INS</kbd> para pegarlo en la ventana del terminal.

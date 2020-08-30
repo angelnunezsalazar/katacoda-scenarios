@@ -1,5 +1,5 @@
 
-## Agregar Nuevas Etapas
+## Agregar Etapas en Jenkinsfile
 
 Editarás el archivo `Jenkinsfile` para agregar etapas al pipeline.
 
@@ -9,27 +9,27 @@ Editarás el archivo `Jenkinsfile` para agregar etapas al pipeline.
 
 * Agrega las siguientes etapas al pipeline.
 
-**Aprobación del tester para iniciar el despliegue en el ambiente de Test** 
+**1. Aprobación del tester para iniciar el despliegue en el ambiente de Test** 
 
-* En la línea 47, debajo del bloque `stage('Deploy Development'){..}`, agrega las siguientes líneas:
+* Entre la línea 47 y 48, debajo del bloque `stage('Deploy Development'){..}`, agrega las siguientes líneas:
 
     <pre class="file" data-target="clipboard">
-    stage('Decide Deploy to Test'){
-        when {
-            branch 'master'
-        }
-        agent none
-        steps {
-            input message: 'Deploy to Test?'
-        }            
+stage('Decide Deploy to Test'){
+    when {
+        branch 'master'
     }
+    agent none
+    steps {
+        input message: 'Deploy to Test?'
+    }            
+}
     </pre> 
 
     ✏ **Nota**: la directiva `when { branch 'master' }` le indica al pipeline que el stage solo se ejecutará en la rama `master`.
 
     ✏ **Nota**: el step `input` pausa la ejecución del pipeline y permite a una persona interactuar y controlar el flujo del pipeline (continuar o cancelar, proveer información).
 
-**Desplegar en Test** 
+**2. Desplegar en Test** 
 
 * El despliegue consiste en detener el contenedor anterior y ejecutar la nueva versión del contenedor.
 
@@ -58,7 +58,7 @@ Editarás el archivo `Jenkinsfile` para agregar etapas al pipeline.
 
     ✏ **Nota**: el step `sh` ejecuta cualquier script de linux.
 
-**Pruebas End to End**
+**3. Pruebas End to End**
 
 * En la carpeta `/src/test/selenium-robot` hay pruebas automatizadas de interfaz gráfica utilizando **selenium**.
 

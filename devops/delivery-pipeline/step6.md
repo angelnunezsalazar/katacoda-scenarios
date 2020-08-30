@@ -1,4 +1,4 @@
-## Agregar Nuevas Etapas
+## Agregar Etapas en Jenkinsfile
 
 Editarás nuevamente el archivo `Jenkinsfile` para agregar más etapas al pipeline.
 
@@ -8,7 +8,7 @@ Editarás nuevamente el archivo `Jenkinsfile` para agregar más etapas al pipeli
 
 * Agrega las siguientes etapas al pipeline.
 
-**Aprobación para iniciar el despliegue en el ambiente de Producción** 
+**1. Aprobación para iniciar el despliegue en el ambiente de Producción** 
 
 Debajo del bloque `stage('End to End Tests'){..}`, agrega las siguientes líneas:
 
@@ -24,7 +24,7 @@ stage('Decide Deploy to Prod'){
 }
 </pre>
 
-**Desplegar en Producción** 
+**2. Desplegar en Producción** 
 
 * El despliegue consisten en detener el contenedor anterior y ejecutar la nueva versión.
 
