@@ -10,9 +10,9 @@ Editarás nuevamente el archivo `Jenkinsfile` para agregar más etapas al pipeli
 
 **1. Aprobación para iniciar el despliegue en el ambiente de Producción** 
 
-Debajo del bloque `stage('End to End Tests'){..}`, agrega las siguientes líneas:
+* Debajo del bloque `stage('End to End Tests'){..}`, agrega las siguientes líneas:
 
-<pre class="file" data-target="clipboard">
+    <pre class="file" data-target="clipboard">
 stage('Decide Deploy to Prod'){
     when {
         branch 'master'
@@ -22,7 +22,7 @@ stage('Decide Deploy to Prod'){
         input message: 'Deploy to Prod?'
     }            
 }
-</pre>
+    </pre>
 
 **2. Desplegar en Producción** 
 
@@ -31,24 +31,24 @@ stage('Decide Deploy to Prod'){
 * Debajo del bloque `stage('Decide Deploy to Test'){..}`, agrega las siguientes líneas:
 
     <pre class="file" data-target="clipboard">
-    stage('Deploy Prod'){
-        when {
-            branch 'master'
-        }
-        agent any
-        steps {
-            sh '''
-                for runName in `docker ps | grep "alpine-petclinic-prod" | awk '{print $1}'`
-                do
-                    if [ "$runName" != "" ]
-                    then
-                        docker stop $runName
-                    fi
-                done
-                docker run --name alpine-petclinic-prod --rm -d -p 9968:8080 $TAG_NAME
-            '''
-        }
-    }   
+stage('Deploy Prod'){
+    when {
+        branch 'master'
+    }
+    agent any
+    steps {
+        sh '''
+            for runName in `docker ps | grep "alpine-petclinic-prod" | awk '{print $1}'`
+            do
+                if [ "$runName" != "" ]
+                then
+                    docker stop $runName
+                fi
+            done
+            docker run --name alpine-petclinic-prod --rm -d -p 9968:8080 $TAG_NAME
+        '''
+    }
+}   
     </pre>
 
 ## Probar el pipeline

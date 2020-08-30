@@ -36,24 +36,24 @@ stage('Decide Deploy to Test'){
 * Debajo del bloque `stage('Decide Deploy to Test'){..}`, agrega las siguientes líneas:
 
     <pre class="file" data-target="clipboard">
-    stage('Deploy Test'){
-        when {
-            branch 'master'
-        }
-        agent any
-        steps {
-            sh '''
-                for runName in `docker ps | grep "alpine-petclinic-test" | awk '{print $1}'`
-                do
-                    if [ "$runName" != "" ]
-                    then
-                        docker stop $runName
-                    fi
-                done
-                docker run --name alpine-petclinic-test --rm -d -p 9967:8080 $TAG_NAME
-            '''
-        }
+stage('Deploy Test'){
+    when {
+        branch 'master'
     }
+    agent any
+    steps {
+        sh '''
+            for runName in `docker ps | grep "alpine-petclinic-test" | awk '{print $1}'`
+            do
+                if [ "$runName" != "" ]
+                then
+                    docker stop $runName
+                fi
+            done
+            docker run --name alpine-petclinic-test --rm -d -p 9967:8080 $TAG_NAME
+        '''
+    }
+}
     </pre> 
 
     ✏ **Nota**: el step `sh` ejecuta cualquier script de linux.
@@ -69,16 +69,16 @@ stage('Decide Deploy to Test'){
 * Debajo del bloque `stage('Deploy Test'){..}`, agrega las siguientes líneas:
 
     <pre class="file" data-target="clipboard">
-        stage("End to End Tests") {
-            when {
-                branch 'master'
-            }
-            agent any
-            steps {
-                sh "chmod +x robot.sh"
-                sh "./robot.sh"
-            }
-        }    
+stage("End to End Tests") {
+    when {
+        branch 'master'
+    }
+    agent any
+    steps {
+        sh "chmod +x robot.sh"
+        sh "./robot.sh"
+    }
+}    
     </pre>
 
 ## Probar el pipeline
