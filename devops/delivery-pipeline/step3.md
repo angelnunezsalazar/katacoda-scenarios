@@ -1,13 +1,16 @@
 Para el funcionamiento del laboratorio necesitas actualizar el repositorio pet-clinic de tu cuenta. Para esto descargarás algunos cambios del repositorio base `DevOpsLabsOnline/pet-clinic`.
 
-* En GitHub, ingresa a tu repositorio de código fuente
-[https://github.com/[your_username]/pet-clinic](https://[[HOST_SUBDOMAIN]]-9876-[[KATACODA_HOST]].environments.katacoda.com/#repo)
+* En GitHub, ingresa a tu repositorio de código fuente **https://github.com/[your_username]/pet-clinic**
+
+    ![Pet Clinic Repository](./assets/pet-clinic-repository.png)
 
 * En tu repositorio de Github, ingresa al **tab 'Pull request'.**
 
 * Haz click en el botón **New pull request**.
 
 * Cargará la página **Comparing Changes**. 
+
+    ![Comparing Changes](./assets/comparing-changes.png)
   
 * Debajo del título habrá una sección con 4 listas desplegables. Estas listas desplegables permiten indicar si quieres enviar o descargar cambios de otro repositorio.
 
