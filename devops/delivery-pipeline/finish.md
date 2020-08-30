@@ -1,11 +1,11 @@
 # Conclusión
 
-Acabas de experimentar un flujo de trabajo de Continuous Integration:
+Acabas de crear y ejecutar un Delivery Pipeline con la siguientes etapas:
 
-* Realizar cambios en una rama de corta duración (feature branch).
-* Realizar un pull request.
-* Ejecutar automáticamente el pipeline de Continuous Integration.
-* Obtener los resultados de las verificaciones en el pipeline.
-* Buscar retroalimentación mediante una revisión de pares.
-* Realizar un merge del cambio en la rama principal.
-* Publicar el paquete de despliegue que será promocionado en los siguientes ambientes.
+* Tomar los cambios que se han integrado en la rama master.
+* Compilar, ejecutar pruebas unitarias, ejecutar pruebas rápidas de integración, generar y publicar el paquete de despliegue en un repositorio de paquetes (GitHub Packages).
+* Aprobar a demanda el despliegue en el Ambiente de Test.
+* Desplegar el paquete en el Ambiente de Test.
+* Ejecutar pruebas funcionales End-to-End sobre el Ambiente de Test.
+* Aprobar a demanda el despliegue en el Ambiente de Producción.
+* Desplegar el paquete en el Ambiente de Producción.

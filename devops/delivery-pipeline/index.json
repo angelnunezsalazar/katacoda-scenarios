@@ -8,6 +8,10 @@
   "details": {
     "steps": [
       {
+        "title": "Preparación del Código Fuente",
+        "text": "step0.md"
+      },      
+      {
         "title": "Preparación del Ambiente",
         "text": "step1.md",
         "verify": "step1-verify.sh"
@@ -15,10 +19,6 @@
       {
         "title": "Ingresa a Jenkins",
         "text": "step2.md"
-      },
-      {
-        "title": "Preparación del Código Fuente",
-        "text": "step3.md"
       },
       {
         "title": "Nuestro Delivery Pipeline",
