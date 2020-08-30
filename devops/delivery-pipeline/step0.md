@@ -7,7 +7,7 @@ Para el funcionamiento del laboratorio necesitas actualizar el repositorio pet-c
 
 * Haz click en el botón **New pull request**.
 
-* Cargará la pantalla **Comparing Changes**. 
+* Cargará la página **Comparing Changes**. 
   
 * Debajo del título habrá una sección con 4 listas desplegables. Estas listas desplegables permiten indicar si quieres enviar o descargar cambios de otro repositorio.
 
@@ -21,3 +21,15 @@ Para el funcionamiento del laboratorio necesitas actualizar el repositorio pet-c
     ![Create Pull Request](./assets/create-pull-request.png)
 
 * Haz click en el botón **Create Pull Request**
+
+* En la página **Open a pull request**, haz click en el botón **Create pull request**
+
+* Cargará la página con la descripción del **Pull request** (es posible que el título y la lista de cambios sea diferente).
+
+    ![Pull Request](./assets/pull-request.png)
+
+* Haz click en el botón **Merge pull request**, y luego **Confirm merge**.
+
+* Al finalizar aparecerá página similar a la siguiente.
+
+    ![Merged](./assets/pull-request-merged.png)
