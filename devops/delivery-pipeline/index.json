@@ -52,6 +52,7 @@
     "showdashboard": true,
     "dashboards": [
       { "name": "GitHub", "port": 9876},
+      { "name": "Jenkins", "port": 8080},
       { "name": "Pet Clinic Dev", "port": 9966}
     ],
     "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nYou can type in and run shell commands here.\r\n\u001b[m"
