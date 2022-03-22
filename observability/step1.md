@@ -16,7 +16,7 @@ Genera un API Key que se utilizará para conectar los agentes que se instalarán
 * Ingresa un nombre del key, por ejemplo `DevOps Labs Key`{{copy}}
 * Copia y guarda el **KEY** generado.
 
-Realiza los siguientes pasos para agregar el API KEY al entorno:
+Realiza los siguientes pasos para agregar el API KEY al entorno del laboratorio:
 * Copia y pega este comando en el terminal `export DD_API_KEY=REPLACE_ME`{{copy}}.
 * Reemplaza el placeholder `REPLACE_ME` por tu API KEY.
 * Ejecuta el comando.
@@ -29,11 +29,10 @@ Ejecuta el siguiente comando para:
 
 `source ./prepare.sh`{{execute}}
 
-*El script puede tomar algunos segundos en ejecutarse.*
+*El script toma varios minutos en ejecutarse.*
 
-**Mientras se ejecuta el script continua avanzando con el resto de este paso**
+**Mientras se ejecuta el script CONTINUA AVANZANDO con el resto de este paso**
 
-El script terminará cuando veas el mensaje **Click on 'CONTINUE'**.
 ## La Aplicación
 
 En este laboratorio trabajarás un Ecommerce completamente funcional que tiene los siguientes componentes ejecutándose como contenedores:
@@ -45,7 +44,7 @@ En este laboratorio trabajarás un Ecommerce completamente funcional que tiene l
 
 ![StoreDog](./assets/storedog.png)
 
-**Nota:** La aplicación tiene intencionalmente algunos errores para que podamos identificarlos utilizando la plataforma de Observabilidad.
+**Nota:** La aplicación tiene intencionalmente algunos errores para que podamos identificarlos aplicando los elementos de Observabilidad.
 ## El Agente de Monitoreo
 
 Un agente de DataDog ya se encuentra corriendo en la instancia, se encarga de reportar las métricas y eventos desde la instancia hacia Datadog.

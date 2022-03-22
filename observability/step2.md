@@ -1,7 +1,7 @@
 ## Simular Tráfico Automáticamente
 
 Utilizaremos pruebas automatizadas sobre el navegador para simular tráfico en la aplicación.
-Ejecutaremos pruebas en un bucle continuo y en varios navegadores en simultáneo.
+Ejecutaremos estas pruebas en un bucle continuo y en varios navegadores en simultáneo.
 
 Debido a que la instancia actual ya tiene muchas cosas ejecutándose, lanzaremos estas pruebas en otra instancia diferente.
 
