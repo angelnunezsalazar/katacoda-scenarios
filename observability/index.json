@@ -16,8 +16,24 @@
         "text": "step2.md"
       },
       {
-        "title": "Mapa de Servicios",
+        "title": "Mapa de Servicios de toda la Aplicación",
         "text": "step3.md"
+      },
+      {
+        "title": "Observabilidad a diferentes Capas",
+        "text": "step4.md"
+      },
+      {
+        "title": "Problemas Identificados",
+        "text": "step5.md"
+      },
+      {
+        "title": "Errores en el Servicio Storefront",
+        "text": "step6.md"
+      },
+      {
+        "title": "Lentitud en las Llamadas",
+        "text": "step7.md"
       }
     ],
     "intro": {

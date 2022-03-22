@@ -1,3 +1,15 @@
+## Configura tu espacio de trabajo
+ 
+Ejecuta el siguiente comando para:
+- Descargar el código fuente.
+- Levantar todos los componentes de la aplicación.
+
+`source ./prepare.sh`{{execute}}
+
+**El script toma varios minutos en ejecutarse.**
+
+**Mientras se ejecuta el script CONTINUA AVANZANDO con el resto de este paso**
+
 ## Datadog
 
 Utilizaremos <a href="https://www.datadoghq.com/" target="datadog">Datadog</a> como plataforma de observabilidad que nos permitirá obtener y visualizar métricas, eventos y traces de nuestra aplicación.
@@ -20,18 +32,6 @@ Realiza los siguientes pasos para agregar el API KEY al entorno del laboratorio:
 * Copia y pega este comando en el terminal `export DD_API_KEY=REPLACE_ME`{{copy}}.
 * Reemplaza el placeholder `REPLACE_ME` por tu API KEY.
 * Ejecuta el comando.
-  
-## Configura tu espacio de trabajo
- 
-Ejecuta el siguiente comando para:
-- Descargar el código fuente.
-- Levantar todos los componentes de la aplicación.
-
-`source ./prepare.sh`{{execute}}
-
-*El script toma varios minutos en ejecutarse.*
-
-**Mientras se ejecuta el script CONTINUA AVANZANDO con el resto de este paso**
 
 ## La Aplicación
 

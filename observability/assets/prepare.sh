@@ -19,8 +19,6 @@ download_base_directory
 start_containers()
 {
 echo -e "${COLINFO}Starting Containers ...${COLRESET}"
-(cd ecommerce-observability && ./startAll.sh)
-
 POSTGRES_USER=postgres POSTGRES_PASSWORD=postgres docker-compose -f ecommerce-observability/docker-compose.yml up -d
 echo -e "${COLINFO}Containers Started${COLRESET}"
 }
