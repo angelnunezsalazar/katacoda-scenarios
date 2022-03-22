@@ -47,6 +47,7 @@
       "host01": [
         {"file": "prepare.sh", "target": "/root","chmod": "+x"},
         {"file": "startAgent.sh", "target": "/root","chmod": "+x"},
+        {"file": "startTraffic.sh", "target": "/root","chmod": "+x"},
         {"file": "puppeteer-mobile.js", "target": "/root/puppeteer"},
         {"file": "puppeteer.sh", "target": "/root/puppeteer","chmod": "+x"},
         {"file": "docker-compose.yml", "target": "/root/puppeteer"}

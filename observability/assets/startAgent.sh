@@ -6,9 +6,10 @@ COLRESET="\u001b[m"
 start_agent()
 {
 echo -e "${COLINFO}Starting Agent ...${COLRESET}"
-docker-compose -f ecommerce-observability/docker-compose.yml up frontend -d
+docker-compose -f ecommerce-observability/docker-compose.yml up agent -d
 echo -e "${COLINFO}Agent Started${COLRESET}"
 }
 start_agent
 
+docker ps --format 'table {{.ID}}\t{{.Names}}\t{{.Status}}'
 echo -e "${COLINFO}You are all set! Click on 'CONTINUE'.${COLRESET}"

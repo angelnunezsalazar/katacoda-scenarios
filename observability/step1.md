@@ -8,7 +8,7 @@ Ejecuta el siguiente comando para:
 
 **El script toma un par de minutos en ejecutarse.**
 
-**Mientras se ejecuta el script CONTINUA AVANZANDO con el resto de este `Step 1`**
+**Mientras se ejecuta el script CONTINUA AVANZANDO con el resto de este Step**
 
 ## Datadog
 
@@ -27,11 +27,6 @@ Genera un API Key que se utilizará para conectar los agentes que se instalarán
 * Click en **New Key.**
 * Ingresa un nombre del key, por ejemplo `DevOps Labs Key`{{copy}}
 * Copia y guarda el **KEY** generado.
-
-Realiza los siguientes pasos para agregar el API KEY al entorno del laboratorio:
-* Copia y pega este comando en el terminal `export DD_API_KEY=REPLACE_ME`{{copy}}.
-* Reemplaza el placeholder `REPLACE_ME` por tu API KEY.
-* Ejecuta el comando.
 
 ## La Aplicación
 
@@ -55,9 +50,12 @@ Abre la aplicación utilizando el siguiente enlace:
 
 💡 **Importante**: Para realizar este paso es necesario que termine el script de preparación.
 
-Un agente de DataDog ya se encuentra corriendo en la instancia, se encarga de reportar las métricas y eventos desde la instancia hacia Datadog.
-
 Los agentes de DataDog se instalan en los hosts y se encargan de reportar las métricas y eventos desde la instancia hacia Datadog.
+
+Realiza los siguientes pasos para agregar el API KEY al entorno del laboratorio:
+* Copia y pega este comando en el terminal `export DD_API_KEY=REPLACE_ME`{{copy}}.
+* Reemplaza el placeholder `REPLACE_ME` por tu **KEY** previamente generado.
+* Ejecuta el comando.
 
 Ejecuta el siguiente comando para instalar el agente de DataDog. Al levantar el agente utilizará tu `API Key` para conectarse con Datadog.
 
@@ -65,4 +63,4 @@ Ejecuta el siguiente comando para instalar el agente de DataDog. Al levantar el 
 
 **La descarga e inicialización toma un par de minutos en ejecutarse**
 
-El script terminará cuando veas el mensaje **Click on 'CONTINUE'**.
+Espera el mensaje **Click on 'CONTINUE'**.
