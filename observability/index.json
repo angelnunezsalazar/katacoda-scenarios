@@ -34,6 +34,10 @@
       {
         "title": "Lentitud en las Llamadas",
         "text": "step7.md"
+      },
+      {
+        "title": "Corregir los Problemas",
+        "text": "step7.md"
       }
     ],
     "intro": {
@@ -42,6 +46,7 @@
     "assets": {
       "host01": [
         {"file": "prepare.sh", "target": "/root","chmod": "+x"},
+        {"file": "startAgent.sh", "target": "/root","chmod": "+x"},
         {"file": "puppeteer-mobile.js", "target": "/root/puppeteer"},
         {"file": "puppeteer.sh", "target": "/root/puppeteer","chmod": "+x"},
         {"file": "docker-compose.yml", "target": "/root/puppeteer"}

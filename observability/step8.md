@@ -1,4 +1,4 @@
-## Corregir el Problema
+## Corregir los Problemas
 
 **Apagar todos los servicios**
 

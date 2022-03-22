@@ -9,5 +9,7 @@ Realiza los siguientes pasos para simular tráfico:
 * Inicia un **nuevo laboratorio** en otro navegador <a href="https://katacoda.com/devopslabs/scenarios/observability" 
   target="jenkins">https://katacoda.com/devopslabs/scenarios/observability</a>
 * Copia este comando `export STOREDOG_URL='https://[[HOST_SUBDOMAIN]]-3000-[[KATACODA_HOST]].environments.katacoda.com/'`{{copy}} y ejecútalo en el terminal del **nuevo laboratorio**.
-* Copia este comando `docker-compose -f puppeteer/docker-compose.yml up -d`{{copy}} y ejecútalo en el terminal del **nuevo laboratorio**.
-* Regresa al **laboratorio original**.
+* Copia este comando `./startTraffic.sh`{{copy}} y ejecútalo en el terminal del **nuevo laboratorio**.
+* Espera el mensaje **Click on 'CONTINUE'**.
+* Asegúrate de estar en el **laboratorio original**.
+

@@ -6,9 +6,9 @@ Ejecuta el siguiente comando para:
 
 `source ./prepare.sh`{{execute}}
 
-**El script toma varios minutos en ejecutarse.**
+**El script toma un par de minutos en ejecutarse.**
 
-**Mientras se ejecuta el script CONTINUA AVANZANDO con el resto de este paso**
+**Mientras se ejecuta el script CONTINUA AVANZANDO con el resto de este `Step 1`**
 
 ## Datadog
 
@@ -45,16 +45,24 @@ En este laboratorio trabajarás un Ecommerce completamente funcional que tiene l
 ![StoreDog](./assets/storedog.png)
 
 **Nota:** La aplicación tiene intencionalmente algunos errores para que podamos identificarlos aplicando los elementos de Observabilidad.
-## El Agente de Monitoreo
-
-Un agente de DataDog ya se encuentra corriendo en la instancia, se encarga de reportar las métricas y eventos desde la instancia hacia Datadog.
-
-## Espera a que termine el script antes de pasar al siguiente paso
-
-El script terminará cuando veas el mensaje **Click on 'CONTINUE'**.
 ## (Opcional) Levanta la Aplicación
 
 Abre la aplicación utilizando el siguiente enlace:
 <a href="https://[[HOST_SUBDOMAIN]]-3000-[[KATACODA_HOST]].environments.katacoda.com/" 
   target="jenkins">https://[[HOST_SUBDOMAIN]]-3000-[[KATACODA_HOST]].environments.katacoda.com/</a>
 
+## El Agente de Monitoreo
+
+💡 **Importante**: Para realizar este paso es necesario que termine el script de preparación.
+
+Un agente de DataDog ya se encuentra corriendo en la instancia, se encarga de reportar las métricas y eventos desde la instancia hacia Datadog.
+
+Los agentes de DataDog se instalan en los hosts y se encargan de reportar las métricas y eventos desde la instancia hacia Datadog.
+
+Ejecuta el siguiente comando para instalar el agente de DataDog. Al levantar el agente utilizará tu `API Key` para conectarse con Datadog.
+
+`./startAgent.sh`{{execute}}
+
+**La descarga e inicialización toma un par de minutos en ejecutarse**
+
+El script terminará cuando veas el mensaje **Click on 'CONTINUE'**.
