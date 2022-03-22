@@ -1,0 +1,46 @@
+{
+  "pathwayTitle": "DevOps Labs",
+  "private": false,
+  "title": "Observability",
+  "description": "Aplicarás los principales elementos de Observabilidad",
+  "difficulty": "Básico",
+  "time": "40 minutos",
+  "details": {
+    "steps": [   
+      {
+        "title": "Introducción y Preparación",
+        "text": "step1.md"
+      },
+      {
+        "title": "Simular Tráfico a la Aplicación",
+        "text": "step2.md"
+      },
+      {
+        "title": "Mapa de Servicios",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "assets": {
+      "host01": [
+        {"file": "prepare.sh", "target": "/root","chmod": "+x"},
+        {"file": "puppeteer-mobile.js", "target": "/root/puppeteer"},
+        {"file": "puppeteer.sh", "target": "/root/puppeteer","chmod": "+x"},
+        {"file": "docker-compose.yml", "target": "/root/puppeteer"}
+      ]
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+
+  },
+  "environment": {
+      "uilayout": "editor-terminal",
+      "uieditorpath": "/root/ecommerce-observability"
+  },
+  "backend": {
+      "imageid": "ubuntu:2004"
+  }
+}
