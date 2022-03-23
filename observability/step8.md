@@ -37,7 +37,7 @@ Para no hacer un re-build de todo el frontend, vamos a actualizar directamente l
 
 En el archivo `docker-compose.yml`{{open}}, dirígete al service **frontend** y encuentra su nombre de imagen **public.ecr.aws/x2b9z2t7/ddtraining/storefront:2.2.0"**.
 
-Reemplázala el nombre de la imagen por `"public.ecr.aws/x2b9z2t7/ddtraining/storefront-fixed:latest"`{{copy}}.
+Reempláza **storefront:2.2.0** por `storefront-fixed:2.2.0`{{copy}}.
 
 **Levantar todos los servicios**
 
