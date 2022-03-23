@@ -4,7 +4,7 @@ Ejecuta el siguiente comando para:
 - Descargar el código fuente.
 - Levantar todos los componentes de la aplicación.
 
-`source ./prepare.sh`{{execute}}
+`./prepare.sh`{{execute}}
 
 **Mientras se ejecuta el script CONTINUA AVANZANDO con el resto de este Step.**
 
