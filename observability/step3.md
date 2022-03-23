@@ -15,4 +15,4 @@ Por cada servicio observarás 3 métricas muy importantes:
 - `Latency`: tiempo de respuesta.
 - `Error`: Porcentage de requests que presentaron error.
 
-Asimismo, en caso algún componente presente alguna alerta este aparecerá pintado de un color diferente.
+Asimismo, en caso algún componente presente alguna alerta, este aparecerá pintado de un color diferente.

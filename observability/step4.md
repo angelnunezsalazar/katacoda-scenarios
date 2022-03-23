@@ -11,8 +11,8 @@ Observarás 1 sola instancia con algunas aplicaciones corriendo encima (docker, 
 **Detalle de las Instancias**
 
 Para ver el detalle de 1 instancia, en el menú de la izquierda ingresa a **Infrastructure > Infrastructure List**, click en **host01**.
-.
-Se desplegará una ventana con toda la información de la instancia.
+
+Se desplegará una ventana emergente con toda la información de la instancia.
 
 En la ventana emergente, haz click en el tab **Metrics** para observar el detalle de las métricas de la instancia.
 
@@ -28,9 +28,11 @@ Para ver el detalle de las métricas a nivel de contenedores, en el menú de la 
 
 ![Container List](./assets/container-list.png)
 
-Observarás al menos 2 métricas importantes a este nivel
+Observarás al menos esta métricas importantes a este nivel
 - `% CPU`: porcentaje de cpu utilizado
 - `RSS Memoria`: cantidad de memoria ocupada.
+- `TX`: cantidad de bytes transmitidos.
+- `RX`: cantidad de bytes recibidos.
 
 Haz click en el container **ecommerce-observability-discounts-1**.
 
@@ -40,10 +42,10 @@ En la ventana emergente observarás los **resource metrics** del contenedor.
 
 (Opcional) Haz click en el tab **logs** para ver los logs del container 
 
-Espera unos segundos a que aparezcan los logs en tiempo real del último minuto o cambia el tiempo de visualización a **past 15 minutes**.
+**Nota:** Espera unos segundos a que aparezcan los logs en tiempo real del último minuto o cambia el tiempo de visualización a **past 15 minutes**.
 
 ![Container List](./assets/container-logs.png)
-## Observabilidad a Nivel de Servicio (Componente)
+## Observabilidad a Nivel de Servicios (Componentes)
 
 Para ver el listado de servicios y un resumen de sus principales métricas, en el menú de la izquierda ingresa a **APM >Services**.
 

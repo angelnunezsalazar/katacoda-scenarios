@@ -2,38 +2,44 @@
 
 **Revisar el Latency de los Endpoints**
 
-Regresar a la pantalla con el `listado de servicios` haz click en `store-frontend` para ver el detalle de información.
+En la pantalla con el listado de servicios (**APM > Services**), haz click en **store-frontend** para ver el detalle de su información.
 
-Desplázate hacia abajo para ver el listado `endpoints`, ordénalos por `Avg Latency` para identificar donde se encuentra el problema.
+Desplázate hacia abajo para ver el listado **Endpoints**, ordénalos por **P50 Latency** para identificar donde se encuentra el problema.
 
-![endpoints-sorted-latency](./assets/break.png)
+![endpoints-sorted-latency](./assets/endpoints-sorted-latency.png)
 
 **Profundizar en la lentitud**
 
 Hay varios endpoints con lentitud.
 
-Comienza haciendo click sobre el endpoint `Spree::ProductsController#show`.
+Comienza haciendo click sobre el endpoint **Spree::ProductsController#show**.
 
-**TBD** En la nueva página, desplázate hacia abajo hasta encontrar los últimos traces `traces`
+En la nueva página, desplázate hacia abajo hasta encontrar un **Listado de Traces** de los últimos requests que ingresaron por ese endpoint.
 
-![endpoint-controler-traces](./assets/break.png)
+![endpoint-controller-traces](./assets/endpoint-controller-traces.png)
 
 Haz click sobre el primero de los traces para ver el detalle.
 
-Observarás el `span` de las llamadas desde el front hasta la BD.
+Observarás el **Flame Graph**, lista de spans de este trace desde el front hasta la BD.
 
-![endpoints-controller-span](./assets/break.png)
+![endpoints-controller-span](./assets/endpoints-controller-span.png)
 
-Haz click en el tab `Span list` y ordena los span por `exec time`.
+Haz click en el tab **Span list** y ordena los span por **exec time**.
 
-Observarás que el span que tiene el mayor tiempo de respuesta es **advertisements-service > /ads**
+![endpoints-controller-span-exectime](./assets/endpoints-controller-span-exectime.png)
+
+Observarás que el span que más tiempo de ejecución consume es **advertisements-service > /ads**
 
 **Abre el archivo con el problema**
 
+Abre el archivo `./ads-service/ads.py`{{open}} y dirígete al endpoint **/ads**.
+
+Observarás que hay un `time.sleep(2.5)` (intencionalmente colocado para incrementar los tiempos de respuesta.)
+
+![ads-sleep](./assets/ads-sleep.png)
+
 En un próximo paso corregiremos el problema.
 
-**(Opcinoal) Identifica el resto de problemas de lentitud**
+**(Opcional) Identifica el resto de problemas de lentitud**
 
-Hay otros endpoints con problemas de lentitud, realiza los pasos anterior para identificar el lugar exacto de la lentitud.
-
-![endpoints-sorted-latency](./assets/break.png)
+Hay otros endpoints con problemas de lentitud, realiza los pasos anteriores para identificar el lugar exacto de lentitud.
