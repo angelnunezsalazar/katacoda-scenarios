@@ -34,9 +34,11 @@ Observarás que el span que más tiempo de ejecución consume es **advertisement
 
 Abre el archivo `./ads-service/ads.py`{{open}} y dirígete al endpoint **/ads**.
 
-Observarás que hay un `time.sleep(2.5)` (intencionalmente colocado para incrementar los tiempos de respuesta.)
+Observarás que hay un `time.sleep(2.5)` (intencionalmente colocado para incrementar los tiempos de respuesta).
 
 ![ads-sleep](./assets/ads-sleep.png)
+
+Está tratando de mostrar información que no está disponible desde este html.
 
 En un próximo paso corregiremos el problema.
 
