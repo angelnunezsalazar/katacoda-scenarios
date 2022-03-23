@@ -4,7 +4,7 @@
 
 Ejecuta el siguiente comando para apagar todos los servicios.
 
-`docker-compose -f ecommerce-observability/docker-compose.yml down -d`{{execute}}
+`docker-compose -f ecommerce-observability/docker-compose.yml down`{{execute}}
 
 **Aplica un parche para corregir el problema**
 
@@ -29,7 +29,7 @@ Encontrarás que en **3 lugares** está la sentencia **DD_VERSION=1.0**.
 
 Ejecuta el siguiene comando para reemplazar todas las ocurrencias por **DD_VERSION=2.0**.
 
-`sed -i '' 's/DD_VERSION=1.0/DD_VERSION=2.0/g' docker-compose.yml`{{execute}}
+`sed -i 's/DD_VERSION=1.0/DD_VERSION=2.0/g' docker-compose.yml`{{execute}}
 
 **Actualiza la imagen docker del frontend**
 
@@ -39,25 +39,41 @@ Para no hacer un re-build de todo el frontend, vamos a actualizar directamente l
 
 Ejecuta el siguiente comando para reemplazar el nombre de la imagen del frontend por una imagen que ya tiene la corrección.
 
-`sed -i '' 's/storefront:2.2.0/storefront-fixed:2.2.0/g' docker-compose.yml`{{execute}}
+`sed -i 's/storefront:2.2.0/storefront-fixed:2.2.0/g' docker-compose.yml`{{execute}}
 
 **Levanta todos los servicios**
 
-Ejecuta el siguiente comando para levantar todos los servicios.
+Ejecuta los siguientes comandos para levantar todos los servicios.
 
 `(cd /root && ./prepare.sh)`{{execute}}
+`(cd /root && ./startAgent.sh)`{{execute}}
+
 ## Comparar el desempeño de ambas versiones de la aplicación
 
 **Revisar las versiones de la aplicación desplegadas**
 
-Ingresa a la lista de servicios, en el menú de la izquierda ingresa a `APM` > `Services`.
+Ingresa a la lista de servicios, en el menú de la izquierda ingresa a **APM > Services**.
 
-Haz click en el servicio `store-frontend` para ver su detalle.
+Haz click en el servicio **store-frontend** para ver su detalle.
 
-Desplázate hacia abajo, hasta la sección `Deployments`.
+Desplázate hacia abajo, hasta la sección **Deployments**.
+
+![deployment-versions](./assets/deployment-versions.png)
 
 Observarás 2 deployments.
-- `TBD`: la versión con los errores y lentitud.
-- `TBD`: la versión con las correcciones y que acabamos de levantar.
+- `1.0`: la versión con los errores y lentitud.
+- `2.0 Active`: la versión con las correcciones y que acabamos de levantar.
+
+Asimismo, las principales métricas de ambas versiones: 
 
 **Comparar el desempeño de ambas versiones**
+
+Haz click sobre la versión **2.0**, se abrirá una ventana emergente con la comparación entre el desempeño de las 2 versiones.
+
+![deployment-versions-compare](./assets/deployment-versions-compare.png)
+
+Observarás que la versión 2.0 tiene menos `errors` y menor `latency` (velocidad) en comparación con la versión 1.0.
+
+En la ventana emergente, haz click en el tab **Endpoints** para ver la comparación a nivel de endpoints.
+
+![deployment-versions-compare-endpoints](./assets/deployment-versions-compare-endpoints.png)
