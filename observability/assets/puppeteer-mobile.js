@@ -78,17 +78,18 @@ const runSession = async (name,browser,url,selectors) => {
 (async () => {
   const browser = await getNewBrowser();
   try {
+
     await runSession("#1",browser, startUrl,
+    [
+      '#product_2 > .card > .card-body > .d-block > .info',
+      '#add-to-cart-button',
+    ]);
+    
+    await runSession("#2",browser, startUrl,
     [
       '#search-bar > .ml-2 > .btn',
       '#taxonomies > .mt-4 > .list-group > .list-group-item:nth-child(1)',
       '.breadcrumb > .breadcrumb-item:nth-child(1) > span > a > span',
-    ]);
-
-    await runSession("#2",browser, startUrl,
-    [
-      '#product_2 > .card > .card-body > .d-block > .info',
-      '#add-to-cart-button',
     ]);
 
     await runSession("#3",browser, startUrl,
