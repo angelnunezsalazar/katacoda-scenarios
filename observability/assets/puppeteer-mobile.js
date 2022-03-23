@@ -48,23 +48,19 @@ const getNewBrowser = async () => {
   return browser;
 };
 
-const openPage = async (url,browser) => {
-  
+const runSession = async (url, selectors) => {
+  const browser = await getNewBrowser();
   let page = await browser.newPage();
-  await page.setDefaultNavigationTimeout(
-    process.env.PUPPETEER_TIMEOUT || 25000
-  );
-  await page.emulate(choosePhone());
-  await page.goto(url, { waitUntil: 'domcontentloaded' });
-  const pageTitle = await page.title();
-  console.log(`"${pageTitle}" loaded`);
-  return page;
-};
 
-const runSession = async (name,browser,url,selectors) => {
   try {
-    console.log(`Session: ${name}`);
-    const page = await openPage(url,browser);
+    await page.setDefaultNavigationTimeout(
+      process.env.PUPPETEER_TIMEOUT || 25000
+    );
+    await page.emulate(choosePhone());
+    await page.goto(url, { waitUntil: 'domcontentloaded' });
+    const pageTitle = await page.title();
+    console.log(`"${pageTitle}" loaded`);
+
     for (const selector of selectors) {
       await page.waitForSelector(selector);
       console.log(`Going to click on ${selector}...`);
@@ -72,52 +68,60 @@ const runSession = async (name,browser,url,selectors) => {
     }
   } catch (err) {
     console.log(`Session failed: ${err}`);
+  } finally {
+    browser.close();
   }
 };
 
+let selectors;
+
+// Session 1
 (async () => {
-  const browser = await getNewBrowser();
-  try {
-    await runSession("#1",browser, startUrl,
-    [
-      '#search-bar > .ml-2 > .btn',
-      '#taxonomies > .mt-4 > .list-group > .list-group-item:nth-child(1)',
-      '.breadcrumb > .breadcrumb-item:nth-child(1) > span > a > span',
-    ]);
+  selectors = [
+    '#search-bar > .ml-2 > .btn',
+    '#taxonomies > .mt-4 > .list-group > .list-group-item:nth-child(1)',
+    '.breadcrumb > .breadcrumb-item:nth-child(1) > span > a > span',
+  ];
+  await runSession(startUrl, selectors);
+})();
 
-    await runSession("#2",browser, startUrl,
-    [
-      '#product_2 > .card > .card-body > .d-block > .info',
-      '#add-to-cart-button',
-    ]);
+// Session 2
+(async () => {
+  selectors = [
+    '#product_2 > .card > .card-body > .d-block > .info',
+    '#add-to-cart-button',
+  ];
+  await runSession(startUrl, selectors);
+})();
 
-    await runSession("#3",browser, startUrl,
-    [
-      'div > #taxonomies > .mt-4 > .list-group > .list-group-item:nth-child(1)',
-      '.row > #sidebar > div > #sidebar_products_search > .btn',
-      '.container > #main-nav-bar > .nav > #home-link > .nav-link',
-    ]);
+// Session 3
+(async () => {
+  selectors = [
+    'div > #taxonomies > .mt-4 > .list-group > .list-group-item:nth-child(1)',
+    '.row > #sidebar > div > #sidebar_products_search > .btn',
+    '.container > #main-nav-bar > .nav > #home-link > .nav-link',
+  ];
+  await runSession(startUrl, selectors);
+})();
 
-    await runSession("#4",browser, startUrl,
-    [
-      'div > #taxonomies > .mt-4 > .list-group > .list-group-item:nth-child(3)',
-      '#product_8 > .card > .card-body > .d-block > .info',
-      '#add-to-cart-button',
-      '#home-link > .nav-link',
-    ]);
+// Session 4
+(async () => {
+  selectors = [
+    'div > #taxonomies > .mt-4 > .list-group > .list-group-item:nth-child(3)',
+    '#product_8 > .card > .card-body > .d-block > .info',
+    '#add-to-cart-button',
+    '#home-link > .nav-link',
+  ];
+  await runSession(startUrl, selectors);
+})();
 
-    await runSession("#5",browser, startUrl,
-    [
-      'div > #taxonomies > .mt-4 > .list-group > .list-group-item:nth-child(3)',
-      '#product_8 > .card > .card-body > .d-block > .info',
-      '#add-to-cart-button',
-      '#home-link > .nav-link',
-    ]);
-
-  } catch (err) {
-    console.log(`Execution failed: ${err}`);
-  } finally {
-    browser.close();
-    console.log(`Browser closed`);
-  }
+// Session 5
+(async () => {
+  selectors = [
+    'div > #taxonomies > .mt-4 > .list-group > .list-group-item:nth-child(3)',
+    '#product_8 > .card > .card-body > .d-block > .info',
+    '#add-to-cart-button',
+    '#home-link > .nav-link',
+  ];
+  await runSession(startUrl, selectors);
 })();
