@@ -46,7 +46,7 @@ Abre la aplicación utilizando el siguiente enlace:
 
 ## El Agente de Monitoreo
 
-💡 **Importante**: Para realizar este paso es necesario que termine el script de preparación.
+💡 **Importante**: Para realizar este paso es necesario que termine el script anterior de preparación.
 
 Los agentes de DataDog se instalan en los hosts y se encargan de reportar las métricas y eventos desde la instancia hacia Datadog.
 

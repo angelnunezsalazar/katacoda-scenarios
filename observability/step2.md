@@ -6,7 +6,7 @@ Ejecutaremos estas pruebas en un bucle continuo y en varios navegadores en simul
 Debido a que la instancia actual ya tiene muchas cosas ejecutándose, lanzaremos estas pruebas en otra instancia diferente.
 
 Realiza los siguientes pasos para simular tráfico:
-* Inicia un **nuevo laboratorio** abriendo el siguiente enlace en otro tab<a href="https://www.katacoda.com/snahider/scenarios/observability" 
+* Inicia un **nuevo laboratorio** abriendo el siguiente enlace en otro tab <a href="https://www.katacoda.com/snahider/scenarios/observability" 
   target="jenkins">https://www.katacoda.com/snahider/scenarios/observability</a>
 * Copia este comando `export STOREDOG_URL='https://[[HOST_SUBDOMAIN]]-3000-[[KATACODA_HOST]].environments.katacoda.com/'`{{copy}} y ejecútalo en el terminal del **nuevo laboratorio**.
 * Copia este comando `./startTraffic.sh`{{copy}} y ejecútalo en el terminal del **nuevo laboratorio**.

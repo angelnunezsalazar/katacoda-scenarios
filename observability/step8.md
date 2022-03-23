@@ -11,8 +11,8 @@ Ejecuta el siguiente comando para apagar todos los servicios.
 Ejecuta los siguientes comandos para aplicar los parches con las correcciones a los problemas anteriores.
 
 - `cd ecommerce-observability`{{execute}}
-- `patch -t -p1 < store-front.patch`{{execute}} corrección a los errores en el front
-- `patch -t -p1 < discounts-service.patch`{{execute}} corrección a la lentitud en algunas llamadas
+- `patch -t -p1 < store-front.patch`{{execute}} (corrección a los errores en el front).
+- `patch -t -p1 < discounts-service.patch`{{execute}} (corrección a la lentitud en algunas llamadas).
 
 **(Opcional) Abre los parches anteriores para observar qué se está cambiando**
 
