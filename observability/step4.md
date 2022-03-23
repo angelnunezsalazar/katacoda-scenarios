@@ -2,46 +2,55 @@
 
 **Mapa de las Instancias**
 
-Para ver un un mapa general de todas las instancias y su salud, en el meneu de la izquierda ingresa a `Infrastructure` > `Host Map`.
+Para ver un un mapa general de todas las instancias y su salud, en el menú de la izquierda ingresa a **Infrastructure > Host Map**.
 
 ![Host Map](./assets/host-map.png)
 
-Observarás que solo hay 1 instancia que tiene buena salud.
+Observarás 1 sola instancia con algunas aplicaciones corriendo encima (docker, trace, agent), el color representa el cpu utilizado y es verde ya que la utilización es baja.
 
 **Detalle de las Instancias**
 
-Para ver el detalle de 1 instancia, en el menú de la izquierda ingresa a `Infrastructure` > `Infrastructure List`, click en `host01`
-
+Para ver el detalle de 1 instancia, en el menú de la izquierda ingresa a **Infrastructure > Infrastructure List**, click en **host01**.
+.
 Se desplegará una ventana con toda la información de la instancia.
 
-En los tabs de la ventana emergente, haz click `Metrics` para observar el detalle de las métricas de la instancia.
+En la ventana emergente, haz click en el tab **Metrics** para observar el detalle de las métricas de la instancia.
 
-![Host Detail](./assets/host-detail.png)
+![Host Detail Metrics](./assets/host-detail.png)
 
-(Opcional) Haz click en `logs` para ver todos los logs de la instancia.
+(Opcional) Haz click en el tab **logs** para ver todos los logs de la instancia.
+
+![Host Detail Logs](./assets/host-detail-logs.png)
 
 ## Observabilidad a Nivel de Contenedores
 
-Para ver el detalle de las métricas a nivel de contenedores, en el menú de la izquierda ingresa a `Infrastructure` > `Containers`.
+Para ver el detalle de las métricas a nivel de contenedores, en el menú de la izquierda ingresa a **Infrastructure > Containers**.
 
-![Container List](./assets/break.png)
+![Container List](./assets/container-list.png)
 
 Observarás al menos 2 métricas importantes a este nivel
 - `% CPU`: porcentaje de cpu utilizado
 - `RSS Memoria`: cantidad de memoria ocupada.
 
+Haz click en el container **ecommerce-observability-discounts-1**.
+
+En la ventana emergente observarás los **resource metrics** del contenedor.
+
+![Container List](./assets/container-metrics.png)
+
+(Opcional) Haz click en el tab **logs** para ver los logs del container 
+
+Espera unos segundos a que aparezcan los logs en tiempo real del último minuto o cambia el tiempo de visualización a **past 15 minutes**.
+
+![Container List](./assets/container-logs.png)
 ## Observabilidad a Nivel de Servicio (Componente)
 
-Para ver el listado de servicios y un resumen de sus principales métricas, en el menú de la izquierda ingresa a `APM` > `Services`.
+Para ver el listado de servicios y un resumen de sus principales métricas, en el menú de la izquierda ingresa a **APM >Services**.
 
 ![Service List](./assets/service-list.png)
 
-Observarás 3 métricas muy importantes:
-- `Requests`: cantidad de llamadas por segundo.
-- `Latency`: tiempo de respuesta.
-- `Error Rate`: Porcentage de requests que presentaron error.
+Haz click en el servicio **store-frontend** para ver el detalle del servicio.
 
-## (Opcional) Observabilidad a Nivel de Base de Datos
+![Service Detail](./assets/service-detail.png)
 
-TBD
-
+Observarás bastante información del servicio como `requests`, `errors`, `latency`, `endpoints`, `metrics`.

@@ -6,9 +6,7 @@ Ejecuta el siguiente comando para:
 
 `source ./prepare.sh`{{execute}}
 
-**El script toma un par de minutos en ejecutarse.**
-
-**Mientras se ejecuta el script CONTINUA AVANZANDO con el resto de este Step**
+**Mientras se ejecuta el script CONTINUA AVANZANDO con el resto de este Step.**
 
 ## Datadog
 
@@ -17,7 +15,7 @@ Utilizaremos <a href="https://www.datadoghq.com/" target="datadog">Datadog</a> c
 ![DataDog](./assets/datadog.jpeg)
 ## Crea tu cuenta
 
-Ingresa a <a href="https://www.datadoghq.com/" target="datadog">https://www.datadoghq.com/</a> y crea una cuenta haciendo clic en el botón "Get Started Free"
+Ingresa a <a href="https://www.datadoghq.com/" target="datadog">https://www.datadoghq.com/</a> y crea una cuenta haciendo clic en el botón **Get Started Free**.
 
 ## Genera en API Key
 
@@ -57,7 +55,7 @@ Realiza los siguientes pasos para agregar el API KEY al entorno del laboratorio:
 * Reemplaza el placeholder `REPLACE_ME` por tu **KEY** previamente generado.
 * Ejecuta el comando.
 
-Ejecuta el siguiente comando para instalar el agente de DataDog. Al levantar el agente utilizará tu `API Key` para conectarse con Datadog.
+Ejecuta el siguiente comando para instalar el agente de DataDog. Al levantar el agente utilizará tu **KEY** para conectarse con Datadog.
 
 `./startAgent.sh`{{execute}}
 

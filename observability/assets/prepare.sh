@@ -20,4 +20,4 @@ echo -e "${COLINFO}Containers Started${COLRESET}"
 start_containers
 
 docker ps --format 'table {{.ID}}\t{{.Names}}\t{{.Status}}'
-echo -e "${COLINFO}You are all set! 'CONTINUE with the step'.${COLRESET}"
+echo -e "${COLINFO}You are all set!.${COLRESET}"

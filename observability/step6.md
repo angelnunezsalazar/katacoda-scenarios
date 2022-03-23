@@ -2,42 +2,40 @@
 
 **Revisar la métrica de errores**
 
-En la pantalla con el `listado de servicios` haz click en `store-frontend` para ver el detalle de información.
+En la pantalla **Service List** haz click en **store-frontend** para ver el detalle de información.
 
 ![Service Detail](./assets/service-detail.png)
 
 Observa que el gráfico de `Total Errors` muestra varios errores en la línea de tiempo.
 
-![service-front-errors](./assets/break.png)
+![service-front-errors](./assets/service-front-errors.png)
 
-Desplázate hacia abajo para ver el disgregagado de los `endpoints` y cuáles podrían estar causando el problemas.
+Desplázate hacia abajo para ver el disgregagado de los **Endpoints** y cuáles podrían estar causando el problemas.
 
 Ordena la tabla de endpoints por `Error Rate` haciendo click en el título de su columna correspondiente.
 
-![service-front-endpoints](./assets/break.png)
+![service-front-endpoints](./assets/service-front-endpoints.png)
 
 **Profundizar en los errores**
 
-Para revisar todos los logs, en el menu de la izquierda ingresa a `Logs` > `Search`.
+Para revisar todos los traces, en el menu de la izquierda ingresa a **APM > Traces**.
 
-Filtra para que muestre solo los `Status:Error` y `Service:store-frontends`.
+Filtra para que muestre solo los `Status:Error`.
 
-Haz click sobre cualquiera de logs de error para ver su detalle.
+![traces-list](./assets/traces-list.png)
 
-![service-front-endpoints](./assets/break.png)
+Haz click sobre cualquier trace, por ejemplo **Spree::OrdersController#edit** para observar el detalle del trace.
 
-Observarás el `span` las llamadas dentro de `store-front`.
+En la ventana emergente, en los tabs de la sección inferior haz click sobre el tab **Errors**.
 
-Haz click sobre el span `xxx`, y luego en la ventana inferior haz clic sobre el tab `Errors`.
+![traces-controller-errors](./assets/traces-controller-errors.png)
 
-Observarás la línea exacta donde se está generando el error **COMPLETAME*.
-
-Parece que se está intentando mostrar un archivo incorrecto.
+Observarás la línea exacta donde se está generando el error: **/app/app/views/spree/layouts/spree_application.html.erb:38**.
 
 (Opcional) Puedes ingresar a diferentes traces para observar el mismo comportamiento.
 
 **Abre el archivo con el problema**
 
-TBD
+Abre el archivo `./store-frontend/app/app/views/spree/layouts/spree_application.html.erb`{{open}}.
 
-En los siguientes pasos corregiremos el problema.
+En un próximo paso corregiremos el problema.

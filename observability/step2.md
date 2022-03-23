@@ -11,5 +11,5 @@ Realiza los siguientes pasos para simular tráfico:
 * Copia este comando `export STOREDOG_URL='https://[[HOST_SUBDOMAIN]]-3000-[[KATACODA_HOST]].environments.katacoda.com/'`{{copy}} y ejecútalo en el terminal del **nuevo laboratorio**.
 * Copia este comando `./startTraffic.sh`{{copy}} y ejecútalo en el terminal del **nuevo laboratorio**.
 * Espera el mensaje **Click on 'CONTINUE'**.
-* Asegúrate de estar en el **laboratorio original**.
+* Asegúrate de regresar al **laboratorio original**.
 
