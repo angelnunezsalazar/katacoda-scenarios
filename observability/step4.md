@@ -1,24 +1,24 @@
-## Observabilidad a Nivel de Instancias
+## Observabilidad a Nivel de Hosts
 
-**Mapa de las Instancias**
+**Mapa de las Hosts**
 
 Para ver un un mapa general de todas las instancias y su salud, en el menú de la izquierda ingresa a **Infrastructure > Host Map**.
 
 ![Host Map](./assets/host-map.png)
 
-Observarás 1 sola instancia con algunas aplicaciones corriendo encima (docker, trace, agent), el color representa el cpu utilizado y es verde ya que la utilización es baja.
+Observarás 1 solo host con algunas aplicaciones corriendo encima (docker, trace, agent), el color representa el cpu utilizado y es verde ya que la utilización es baja.
 
-**Detalle de las Instancias**
+**Detalle de los Hosts**
 
-Para ver el detalle de 1 instancia, en el menú de la izquierda ingresa a **Infrastructure > Infrastructure List**, click en **host01**.
+Para ver el detalle de 1 host, en el menú de la izquierda ingresa a **Infrastructure > Infrastructure List**, click en **host01**.
 
-Se desplegará una ventana emergente con toda la información de la instancia.
+Se desplegará una ventana emergente con toda la información del host.
 
-En la ventana emergente, haz click en el tab **Metrics** para observar el detalle de las métricas de la instancia.
+En la ventana emergente, haz click en el tab **Metrics** para observar el detalle de las métricas del host.
 
 ![Host Detail Metrics](./assets/host-detail.png)
 
-(Opcional) Haz click en el tab **logs** para ver todos los logs de la instancia.
+(Opcional) Haz click en el tab **logs** para ver todos los logs del host.
 
 ![Host Detail Logs](./assets/host-detail-logs.png)
 
